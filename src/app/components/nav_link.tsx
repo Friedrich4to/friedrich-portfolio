@@ -8,7 +8,7 @@ interface NavLinkProps {
 
 const Nav_Link: React.FC<NavLinkProps> = ({ href, children }) => {
     return (
-        <Link className="flex gap-0 text-base lg:text-sm font-medium items-center group hover:gap-2" href={href}>
+        <Link className="flex gap-0 text-base lg:text-sm font-medium items-center group hover:gap-2" href={href} target="_top">
             <div className="rounded-sm w-0 h-0 bg-verdeSage group-hover:w-2 group-hover:h-2 transition-all"></div>
             {children}
         </Link>

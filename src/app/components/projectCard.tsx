@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function ProjectCard(props) {
 
     return(
-        <Link href={props.slug}>
+        <Link href={props.slug} target="_top">
             <div className="w-full h-fit rounded-lg">
                 <div>
                     <Image

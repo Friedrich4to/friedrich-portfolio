@@ -17,6 +17,8 @@ const config: Config = {
       'grisMid': '#8A8A8A',
       'grisOs': '#787A75',
       'verdeSage': '#3A9272',
+      'alt_negro': '#161616',
+      'alt_gris': '#0D0D0D',
     },
 
     extend: {

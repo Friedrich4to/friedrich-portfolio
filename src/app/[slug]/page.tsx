@@ -1,9 +1,9 @@
-import Image from "next/image";
 import SmoothScroll from "../components/smoothScroll";
 import ScrollToTopButton from "../components/backTop_btn";
 import projects from "../data/projects_data.json"
 import ProjectInfoCard from "./ProjectInfoCard";
 import ProjectRichText from "./InfoDivisionCard";
+import MoreProjects_link from "./NextPrevious";
 import ImgBox from "./ProjectImgBox";
 
 
@@ -19,12 +19,23 @@ interface item {
   };
 }
 
+interface nextItem {
+  Link: {
+    href: URL;
+  };
+}
+
 const Home:React.FC<Params> = ({ params: {slug}}) => {
 
   const item = projects.find((item) => item.slug === slug);
 
+  const currentIndex = projects.findIndex((item) => item.slug === slug);
+  const nextItem = currentIndex !== -1 && currentIndex < projects.length - 1 
+  ? projects[currentIndex + 1] 
+  : projects[0];
+
   return (
-    <main className="flex justify-center w-screen bg-blanco dark:bg-negro">
+    <main className="flex justify-center w-screen ">
       <SmoothScroll></SmoothScroll>
       <div className="fixed bottom-6 right-6 bg-gris p-8 rounded-2xl flex flex-col justify-center items-center gap-3">
         <div className="bg-negro h-4 w-4 rounded-sm"></div>
@@ -131,9 +142,9 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         </div>
 
         {/*Footer*/}
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex gap-4 flex-col">
           <ScrollToTopButton />
-        <p>Oregano poleo bro :C</p>
+          <MoreProjects_link slug={nextItem?.slug} project_name={nextItem?.name}/>
         </div>
       </div>
 

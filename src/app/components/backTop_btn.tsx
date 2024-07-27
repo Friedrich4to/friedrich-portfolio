@@ -9,8 +9,8 @@ function scrollToTop() {
 
 export default function ScrollToTopButton() {
     return (
-        <button className="p-4 border rounded-lg hover:border-verdeSage hover:bg-verdeSage hover:text-blanco transition-all" onClick={scrollToTop}>
-            Volver arriba
+        <button className="w-fit p-4 border rounded-lg hover:border-negro hover:bg-negro hover:text-blanco transition-all" onClick={scrollToTop}>
+            <span></span> Volver arriba
         </button>
     );
 }

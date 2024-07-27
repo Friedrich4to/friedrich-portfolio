@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={borna.className}>
+    <html lang="en" className={`${borna.className} dark bg-blanco dark:bg-alt_negro`}>
       <body className="flex text-negro dark:text-blanco">
         <Header />
         {children}
