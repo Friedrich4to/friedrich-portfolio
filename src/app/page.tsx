@@ -22,7 +22,7 @@ export default function Home() {
 
         <div className="flex flex-col gap-6 ">
           <div>
-            <h2 className="text-grisMid font-light italic">Design expertise</h2>
+            <h2 className="text-grisMid font-light italic">Esto se va btw</h2>
             <p className="text-negro text-xl font-light">Web/App Interface - Motion Graphics - 3D Design</p>
           </div>
           <div>
