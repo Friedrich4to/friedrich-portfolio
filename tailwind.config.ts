@@ -16,7 +16,7 @@ const config: Config = {
       'gris': '#D1D2CD',
       'grisMid': '#8A8A8A',
       'grisOs': '#787A75',
-      'verdeSage': '#3A9272',
+      'verdeSage': '#497A62',
       'alt_negro': '#161616',
       'alt_gris': '#0D0D0D',
     },
@@ -32,6 +32,14 @@ const config: Config = {
         '2x-full': '200vh',
         '5vw': '5vw',
         '80p': '70vh',
+      },
+
+      scale: {
+        '300': '3',
+      },
+
+      transitionTimingFunction: {
+        'aggresive': 'cubic-bezier(0,1.41,.74,1)',
       }
     },
   },
