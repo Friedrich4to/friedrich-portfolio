@@ -1,10 +1,12 @@
+'use client'
+
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function ProjectCard(props) {
 
     return(
-        <Link href={props.slug} target="_top">
+        <Link href={props.slug} target="_top" prefetch>
             <div className="w-full h-fit rounded-lg">
                 <div>
                     <Image
