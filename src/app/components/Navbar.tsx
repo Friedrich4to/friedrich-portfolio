@@ -35,8 +35,8 @@ export default function Header() {
       <div>
         <Link className='w-20 mb-5' href="/"><Logo /></Link>
         
-        <button className='py-2 px-2 w-fit text-sm rounded-lg border border-negro flex gap-2 items-center'>
-          <div className="bg-negro w-5 h-5 rounded"></div>
+        <button className='py-2 px-2 w-fit text-sm rounded-lg border text-grisMid border-grisMid flex gap-2 items-center'>
+          <div className="bg-grisOs w-5 h-5 rounded"></div>
           Light
         </button>
         <p className="py-2 px-4 w-fit rounded-lg border">{formattedTime}</p>
@@ -46,11 +46,13 @@ export default function Header() {
 
       <div>
         <p className="text-grisMid text-sm font-light">UX-UI & Dev Projects</p>
-        <Nav_Link href="/">All Projects</Nav_Link>
+        <Link href="/" ><Nav_Link href="/">All Projects</Nav_Link></Link>
         {
-            data.map((data, index) => {
+            data.map((data) => {
               return(
-                <Nav_Link key={index} href={'/' + data.slug}>{data.name}</Nav_Link>
+                <Link href={'/' + data.slug} >
+                  <Nav_Link href={'/' + data.slug} >{data.name}</Nav_Link>
+                </Link>
               )
             })
           }
@@ -58,8 +60,8 @@ export default function Header() {
 
       <div>
         <p className="text-grisMid text-sm font-light">About & Contact</p>
-        <Nav_Link href="/carreer">Career.</Nav_Link>
-        <Nav_Link href="/bio">Bio.</Nav_Link>
+        <Link href="/carreer" ><Nav_Link href="/carreer">Career.</Nav_Link></Link>
+        <Link href="/bio" ><Nav_Link href="/bio">Bio.</Nav_Link></Link>
       </div>
 
       <div>

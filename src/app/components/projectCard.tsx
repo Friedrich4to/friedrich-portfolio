@@ -6,7 +6,6 @@ import Image from 'next/image';
 export default function ProjectCard(props) {
 
     return(
-        <Link href={props.slug} target="_top" prefetch>
             <div className="w-full h-fit rounded-lg">
                 <div>
                     <Image
@@ -24,6 +23,5 @@ export default function ProjectCard(props) {
                     <p className='text-grisOs text-xs lg:text-base text-right font-light'>{props.type}</p>
                 </div>
             </div>
-        </Link>
     )
 }

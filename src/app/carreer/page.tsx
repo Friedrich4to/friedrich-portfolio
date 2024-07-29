@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <main className="flex justify-center w-screen">
-      <SmoothScroll></SmoothScroll>
+
       <div className="w-full max-w-screen-xl mx-5vw my-24 flex flex-col gap-12 xl:my-48 lg:gap-16">
 
         <div>

@@ -12,10 +12,8 @@ export default function Home() {
   const [data, setData] = useState([...projects])
 
   return (
-    <main className="flex justify-center w-screen">
-      <SmoothScroll></SmoothScroll>   
+    <main className="flex justify-center w-screen">  
       <div className="w-full max-w-screen-xl mx-5vw my-24 flex flex-col gap-12 xl:my-36 lg:gap-16">
-
         <div>
           <div className="italic mb-4 text-2xl font-light lg:text-3xl flex items-baseline gap-4">
             <span className="text-grisMid non-italic ">Greetings! I am</span>
@@ -50,7 +48,9 @@ export default function Home() {
           {
             data.map((data,index) => {
               return(
-                <ProjectCard key={index} name={data.name} type={data.type} img={data.thumbnail} slug={data.slug}/>
+                <Link key={index} href={data.slug}>
+                  <ProjectCard img={data.thumbnail} name={data.name} type={data.type}/>
+                </Link>
               )
             })
           }
