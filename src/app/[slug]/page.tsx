@@ -60,9 +60,9 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         <div className="flex flex-col gap-12">
         <ProjectRichText 
         title="The main challenge" 
-        paragraph={item?.problem?.map((paragraph) => {
+        paragraph={item?.problem?.map((paragraph, index) => {
         return (
-            <p className="flex gap-2 items-center">{paragraph?.paragraph}</p>
+            <p key={index} className="flex gap-2 items-center">{paragraph?.paragraph}</p>
           );
         })}/>
 
@@ -86,15 +86,15 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         <div className="flex flex-col gap-12">
         <ProjectRichText
         title="The provided solution" 
-        paragraph={item?.solution?.map((paragraph) => {
+        paragraph={item?.solution?.map((paragraph, index) => {
           return (
-              <p className="flex gap-2 items-center">{paragraph?.paragraph}</p>
+              <p key={index} className="flex gap-2 items-center">{paragraph?.paragraph}</p>
             );
           })}/>
         
         <ProjectRichText title="Stablished objectives" paragraph={item?.requirements?.map((requirement, index) => {
         return (
-            <p className="flex gap-2 items-center"><span className="w-2 h-2 rounded-sm bg-verdeSage"></span>{requirement?.requirement}</p>
+            <p key={index} className="flex gap-2 items-center"><span className="w-2 h-2 rounded-sm bg-verdeSage"></span>{requirement?.requirement}</p>
           );
         })}/>
 
@@ -118,9 +118,9 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         <div className="flex flex-col gap-12">
         <ProjectRichText 
         title="The Final product" 
-        paragraph={item?.final?.map((paragraph) => {
+        paragraph={item?.final?.map((paragraph, index) => {
           return (
-              <p className="flex gap-2 items-center">{paragraph?.paragraph}</p>
+              <p key={index} className="flex gap-2 items-center">{paragraph?.paragraph}</p>
             );
           })}/>
 

@@ -48,9 +48,9 @@ export default function Header() {
         <p className="text-grisMid text-sm font-light">UX-UI & Dev Projects</p>
         <Nav_Link href="/">All Projects</Nav_Link>
         {
-            data.map((data) => {
+            data.map((data, index) => {
               return(
-                <Nav_Link href={'/' + data.slug}>{data.name}</Nav_Link>
+                <Nav_Link key={index} href={'/' + data.slug}>{data.name}</Nav_Link>
               )
             })
           }

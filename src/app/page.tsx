@@ -5,6 +5,7 @@ import SmoothScroll from "./components/smoothScroll";
 import projects from "./data/projects_data.json"
 import { useState } from "react";
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
 
@@ -20,8 +21,14 @@ export default function Home() {
             <span className="text-grisMid non-italic ">Greetings! I am</span>
             <span className="lg:hidden"><br/></span>
             <div className='flex items-baseline'>
-              <Link className='w-12 h-12 rounded-full bg-verdeSage border overflow-hidden hover:scale-300 transition-all duration-500 ease-aggresive' href='/bio'>
-                <img src="/images/bio/portrait.png" alt="My Portrait" className='object-cover h-full'/>
+              <Link className='relative w-12 h-12 rounded-full bg-verdeSage border overflow-hidden hover:scale-300 transition-all duration-500 ease-aggresive' href='/bio'>
+                <Image
+                fill
+                quality={10}
+                src="/images/bio/portrait.png" 
+                alt="My Portrait" 
+                className='object-cover h-full'
+                />
               </Link>
               <h1>Frederick Pimentel</h1>
             </div>
@@ -41,9 +48,9 @@ export default function Home() {
 
         <div className="grid grid-cols-1 gap-4 xl:grid-cols-2 lg:gap-12">
           {
-            data.map((data) => {
+            data.map((data,index) => {
               return(
-                <ProjectCard name={data.name} type={data.type} img={data.thumbnail} slug={data.slug}/>
+                <ProjectCard key={index} name={data.name} type={data.type} img={data.thumbnail} slug={data.slug}/>
               )
             })
           }

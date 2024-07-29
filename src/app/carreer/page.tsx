@@ -24,9 +24,9 @@ export default function Home() {
         <div className="flex flex-col gap-6 ">
           <h1 className="text-verdeSage text-3xl lg:text-5xl font-black">College Academics</h1>
           {
-            academics.map((academic) => {
+            academics.map((academic, index) => {
               return(
-                <StudyJobCard title={academic.job_title} institution={academic.job_instituion} initial_year={academic.start_date} finishing_year={academic.finish_date}/>
+                <StudyJobCard key={index} title={academic.job_title} institution={academic.job_instituion} initial_year={academic.start_date} finishing_year={academic.finish_date}/>
               )
             })
           }
@@ -35,9 +35,9 @@ export default function Home() {
         <div className="flex flex-col gap-6 ">
           <h1 className="text-verdeSage text-3xl lg:text-5xl font-black">Work Experience</h1>
           {
-            jobs.map((job) => {
+            jobs.map((job, index) => {
               return(
-                <StudyJobCard title={job.job_title} institution={job.job_instituion} initial_year={job.start_date} finishing_year={job.finish_date}/>
+                <StudyJobCard key={index} title={job.job_title} institution={job.job_instituion} initial_year={job.start_date} finishing_year={job.finish_date}/>
               )
             })
           }
