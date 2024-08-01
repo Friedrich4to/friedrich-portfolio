@@ -17,8 +17,9 @@ function MobileHeader({open, setOpen}){
     <header className={`fixed justify-end items-end bottom-4 right-4 h-screen w-screen z-40 transition-all ${open ? "flex" : "hidden"}`}>
       {/*MobileHeader*/}
       <div className='flex flex-col gap-8 py-12 pr-12 pl-8 h-fit w-fit bg-gris rounded-xl'>
+        
         <div className='flex flex-col gap-4'>
-          <Link className='w-20 mb-5' href="/"><Logo /></Link>
+          <Link className='w-20 mb-5' href="/" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}><Logo /></Link>
           <button className='py-2 px-2 w-fit text-sm rounded-lg border text-grisMid border-grisMid flex gap-2 items-center'>
             <div className="bg-grisOs w-5 h-5 rounded"></div>
             Light
@@ -27,10 +28,10 @@ function MobileHeader({open, setOpen}){
         </div>
 
         <div className='flex flex-col gap-4'>
-        <p className="text-grisMid text-sm font-light">Navigation</p>
-          <Link className='p-4 w-full text-base rounded-lg border' href="/">Projects</Link>
-          <Link className='p-4 w-full text-base rounded-lg border' href="/carreer">Career</Link>
-          <Link className='p-4 w-full text-base rounded-lg border' href="/bio">Bio</Link>
+        <p className="text-grisMid text-sm font-light">Navegación</p>
+          <Link className='p-4 w-full text-base rounded-lg border hover:text-blanco hover:border-verdeSage hover:bg-verdeSage' href="/#projects" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>Proyectos</Link>
+          <Link className='p-4 w-full text-base rounded-lg border hover:text-blanco hover:border-verdeSage hover:bg-verdeSage' href="/carreer" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>Carrera</Link>
+          <Link className='p-4 w-full text-base rounded-lg border hover:text-blanco hover:border-verdeSage hover:bg-verdeSage' href="/bio" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>Bio</Link>
         </div>
 
         <div className='flex gap-4'>
@@ -94,7 +95,7 @@ export function Header() {
 
       <div 
       onClick={() => {setOpen(!open)}} 
-      className={`fixed flex place-items-center xl:hidden bottom-4 right-4   border rounded-xl z-50 transition-all duration-200 ease-aggresive ${open ? "bg-verdeSage border-verdeSage" : "bg-gris"}`}
+      className={`fixed flex place-items-center xl:hidden bottom-4 right-4 p-4 border rounded-xl z-50 transition-all duration-200 ease-aggresive ${open ? "bg-verdeSage border-verdeSage" : "bg-gris"}`}
       >
         <div className={`rounded-md transition-all duration-500 ease-aggresive ${open ? "w-6 h-6 bg-blanco" : "w-8 h-8 bg-negro"}`}></div>
       </div>
@@ -115,8 +116,8 @@ export function Header() {
         </div>
 
         <div>
-          <p className="text-grisMid text-sm font-light">UX-UI & Dev Projects</p>
-          <Link href="/" ><Nav_Link href="/">All Projects</Nav_Link></Link>
+          <p className="text-grisMid text-sm font-light">Proyectos UX-UI & Dev</p>
+          <Link href="/" ><Nav_Link href="/">Todos los proyectos</Nav_Link></Link>
           {
               data.map((data, index) => {
                 return(
@@ -129,13 +130,13 @@ export function Header() {
         </div>
 
         <div>
-          <p className="text-grisMid text-sm font-light">About & Contact</p>
+          <p className="text-grisMid text-sm font-light">Sobre mi</p>
           <Link href="/carreer" ><Nav_Link href="/carreer">Career.</Nav_Link></Link>
           <Link href="/bio" ><Nav_Link href="/bio">Bio.</Nav_Link></Link>
         </div>
 
         <div>
-          <p className="text-grisMid text-sm font-light">Social Media</p>
+          <p className="text-grisMid text-sm font-light">Redes sociales</p>
           <div className='flex gap-4'>
             <SocialLink link='https://www.instagram.com/friedrich4to/' icon={<InstagramIcon />}/>
             <SocialLink link='https://www.artstation.com/fredemor' icon={<InstagramIcon />}/>

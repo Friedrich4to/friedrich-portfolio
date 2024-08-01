@@ -37,7 +37,7 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
   return (
     <main className="flex justify-center w-screen ">
   
-      <div className="fixed z-50 bottom-6 right-6 bg-gris dark:bg-alt_gris py-6 px-4 rounded-2xl flex justify-center items-center gap-3">
+      <div className="fixed hidden z-50 bottom-6 right-6 bg-gris dark:bg-alt_gris py-6 px-4 rounded-2xl justify-center items-center gap-3">
         <div className="bg-verdeSage h-4 w-4 rounded-sm"></div>
         <div className="bg-grisMid dark:bg-negro h-2 w-2 rounded-sm"></div>
         <div className="bg-grisMid dark:bg-negro h-2 w-2 rounded-sm"></div>

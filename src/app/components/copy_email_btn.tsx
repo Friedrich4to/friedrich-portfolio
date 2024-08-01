@@ -31,7 +31,7 @@ const EmailButton: React.FC = () => {
       onClick={handleClick}
     >
       <span className='w-3 h-5 bg-negro group-hover:bg-blanco transition-all'></span>
-      {hovered ? 'Copy Email' : 'work@fredpimentel.com'}
+      {hovered ? 'Copiar al portapapeles' : 'work@fredpimentel.com'}
     </button>
   );
 };

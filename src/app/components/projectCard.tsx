@@ -8,7 +8,7 @@ export default function ProjectCard(props) {
     return(
             <div className="relative w-full h-fit rounded-lg group border border-negro hover:border-verdeSage transition-all duration-1000 ease-aggresive">
                 <div className='absolute h-full w-full bg-verdeSage rounded-lg opacity-0 group-hover:opacity-40 transition-all duration-1000 ease-aggresive'></div>
-                <div className='relative w-all h-[240px] md:h-[380px]'>
+                <div className='relative w-all h-40 md:h-[380px]'>
                     <Image
                         src={props.img}
                         fill
