@@ -15,11 +15,10 @@ export default function Home() {
     <main className="flex justify-center w-screen">  
       <div className="w-full max-w-screen-xl mx-5vw my-24 flex flex-col gap-12 xl:my-36 lg:gap-16">
         <div>
-          <div className="italic mb-4 text-2xl font-light lg:text-3xl flex items-baseline gap-4">
+          <div className="italic mb-4 text-2xl font-light lg:text-3xl flex flex-col md:flex-row items-baseline gap-2">
             <span className="text-grisMid non-italic ">Greetings! I am</span>
-            <span className="lg:hidden"><br/></span>
             <div className='flex items-baseline'>
-              <Link className='relative w-12 h-12 rounded-full bg-verdeSage border overflow-hidden hover:scale-300 transition-all duration-500 ease-aggresive' href='/bio'>
+              <Link className='hidden md:block relative w-12 h-12 rounded-full bg-verdeSage border overflow-hidden hover:scale-300 transition-all duration-500 ease-aggresive' href='/bio'>
                 <Image
                 fill
                 quality={10}
@@ -36,11 +35,28 @@ export default function Home() {
 
         <div className="flex flex-col gap-6 ">
             <h2 className="text-grisMid text-xl font-light">to be more specific...</h2>
-            <div className='grid grid-flow-col auto-cols-max gap-12'>
-              <div className='flex flex-col items-center text-center gap-2'><span className='w-36 h-36 bg-negro'></span><h2>Web Design</h2></div>
-              <div className='flex flex-col items-center text-center gap-2'><span className='w-36 h-36 bg-negro'></span><h2>Web Design</h2></div>
-              <div className='flex flex-col items-center text-center gap-2'><span className='w-36 h-36 bg-negro'></span><h2>Web Design</h2></div>
-              <div className='flex flex-col items-center text-center gap-2'><span className='w-36 h-36 bg-negro'></span><h2>Web Design</h2></div>
+            <div className='grid grid-cols-2 md:flex place-items-start gap-12'>
+
+              <div className='flex flex-col items-center text-left gap-2'>
+                <span className='w-36 h-36 bg-negro'></span>
+                <h2 className='w-full'>Web Design</h2>
+              </div>
+
+              <div className='flex flex-col items-center text-left gap-2'>
+                <span className='w-36 h-36 bg-negro'></span>
+                <h2 className='w-full'>Web Design</h2>
+              </div>
+
+              <div className='flex flex-col items-center text-left gap-2'>
+                <span className='w-36 h-36 bg-negro'></span>
+                <h2 className='w-full'>Web Design</h2>
+              </div>
+
+              <div className='flex flex-col items-center text-left gap-2'>
+                <span className='w-36 h-36 bg-negro'></span>
+                <h2 className='w-full'>Web Design</h2>
+              </div>
+              
             </div>
         </div>
 

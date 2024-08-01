@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 
-import Header from './components/Navbar'
+import { Header } from './components/Navbar'
 
 import localfont from "next/font/local";
 import type { Viewport } from 'next'

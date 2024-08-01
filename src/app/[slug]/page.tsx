@@ -43,7 +43,7 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         <div className="bg-grisMid dark:bg-negro h-2 w-2 rounded-sm"></div>
         <div className="bg-grisMid dark:bg-negro h-2 w-2 rounded-sm"></div>
       </div>      
-      <div className="w-full max-w-screen-xl mx-5vw my-24 flex flex-col gap-12 xl:my-48 lg:gap-24">
+      <div className="w-full max-w-screen-xl mx-5vw my-24 flex flex-col gap-12 xl:my-48 lg:gap-28">
 
         {/* Info */}
         <ProjectInfoCard name={item?.name} type={item?.type} description={item?.description} roles={item?.roles} tech={item?.tech} colab={item?.colab} colab_rol={item?.colab_rol} colab_link={item?.colab_link} />        

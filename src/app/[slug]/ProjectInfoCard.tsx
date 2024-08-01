@@ -19,7 +19,7 @@ export default function ProjectInfoCard(props) {
 
           <div>
             <span className="text-grisMid text-lg font-medium italic">About the project</span>
-            <p className="max-w-screen-lg text-1xl lg:text-4xl font-light">{props.description}</p>
+            <p className="max-w-screen-lg text-2xl lg:text-4xl font-light">{props.description}</p>
           </div>
 
           <div className="flex flex-col gap-6">
