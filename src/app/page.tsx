@@ -30,7 +30,9 @@ export default function Home() {
               <h1>Frederick Pimentel</h1>
             </div>
           </div>
-          <h1 className="text-7xl font-black lg:text-8xl"><span className="text-verdeSage">UX-UI</span> DESIGN<br/>& <span className="text-verdeSage">FRONT-END</span> DEV</h1>
+          <h1 className="text-7xl font-black lg:text-8xl">
+            Diseñador <br className='md:hidden'/><span className="text-verdeSage">UX-UI</span><br/>
+            & Dev. <span className="text-verdeSage">FRONT-END</span></h1>
         </div>
 
         <div className="flex flex-col gap-2 ">

@@ -14,9 +14,9 @@ function MobileHeader({open, setOpen}){
   const [data, setData] = useState([...projects])
 
   return(
-    <header className={`fixed justify-end items-end bottom-4 right-4 h-screen w-screen z-40 transition-all ${open ? "flex" : "hidden"}`}>
+    <header className={`fixed justify-end items-end bottom-8 right-8 h-screen w-screen z-40 transition-all ${open ? "flex" : "hidden"}`}>
       {/*MobileHeader*/}
-      <div className='flex flex-col gap-8 py-12 pr-12 pl-8 h-fit w-fit bg-gris rounded-xl'>
+      <div className='flex flex-col gap-8 py-12 pr-12 pl-8 h-fit w-5/6 md:w-3/6 bg-gris rounded-xl'>
         
         <div className='flex flex-col gap-4'>
           <Link className='w-20 mb-5' href="/" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}><Logo /></Link>

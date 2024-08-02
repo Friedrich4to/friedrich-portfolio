@@ -6,7 +6,7 @@ export default function Home() {
       <div className="w-full max-w-screen-xl mx-5vw my-24 flex flex-col gap-12 xl:my-48 lg:gap-16">
 
         <div>
-          <h1 className="text-5xl font-black lg:text-8xl">BIOGRAPHY<br />& HOBBIES</h1>
+          <h1 className="text-5xl font-black lg:text-8xl">Biografia<br />& Pasatiempos</h1>
         </div>
 
         <div className="flex flex-col gap-6 max-w-screen-md">

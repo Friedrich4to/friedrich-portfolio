@@ -18,23 +18,23 @@ export default function ProjectInfoCard(props) {
           </div>
 
           <div>
-            <span className="text-grisMid text-lg font-medium italic">About the project</span>
+            <span className="text-grisMid text-lg font-medium italic">Acerca del proyecto</span>
             <p className="max-w-screen-lg text-2xl lg:text-4xl font-light">{props.description}</p>
           </div>
 
           <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-6 lg:gap-24 lg:flex-row [&>*]:w-fit">
               <div>
-                <span className="text-grisMid text-1xl font-medium italic">My duties</span>
+                <span className="text-grisMid text-1xl font-medium italic">Mis roles</span>
                 <p className="text-base font-light lg:text-xl">{highlightRoles(props.roles)}</p>
               </div>
               <div>
-                <span className="text-grisMid text-1xl font-medium italic">Technologies used</span>
+                <span className="text-grisMid text-1xl font-medium italic">Fue hecho con</span>
                 <p className="text-base font-light lg:text-xl">{props.tech}</p>
               </div>
             </div>
             <div>
-              <span className="text-grisMid text-1xl font-medium italic ">Colaborators</span>
+              <span className="text-grisMid text-1xl font-medium italic ">Colaboradores</span>
               <p className="text-base lg:text-xl">{highlightRoles(props.colab_rol)} <a className="text-verdeSage underline italic" href={props.colab_link} target="_blank">{props.colab}</a></p>
             </div>
           </div>

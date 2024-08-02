@@ -59,7 +59,7 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         {/* Problem */}
         <div className="flex flex-col gap-12">
         <ProjectRichText 
-        title="The main challenge" 
+        title="Problema a solucionar" 
         paragraph={item?.problem?.map((paragraph, index) => {
         return (
             <p key={index} className="flex gap-2 items-center">{paragraph?.paragraph}</p>
@@ -85,14 +85,14 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         {/* Solution */}
         <div className="flex flex-col gap-12">
         <ProjectRichText
-        title="The provided solution" 
+        title="Solución planteada" 
         paragraph={item?.solution?.map((paragraph, index) => {
           return (
               <p key={index} className="flex gap-2 items-center">{paragraph?.paragraph}</p>
             );
           })}/>
         
-        <ProjectRichText title="Stablished objectives" paragraph={item?.requirements?.map((requirement, index) => {
+        <ProjectRichText title="Objetivos establecidos" paragraph={item?.requirements?.map((requirement, index) => {
         return (
             <p key={index} className="flex gap-2 items-center"><span className="w-2 h-2 rounded-sm bg-verdeSage"></span>{requirement?.requirement}</p>
           );
@@ -117,7 +117,7 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         {/* Final */}
         <div className="flex flex-col gap-12">
         <ProjectRichText 
-        title="The Final product" 
+        title="Producto final" 
         paragraph={item?.final?.map((paragraph, index) => {
           return (
               <p key={index} className="flex gap-2 items-center">{paragraph?.paragraph}</p>
