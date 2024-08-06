@@ -1,5 +1,7 @@
 'use client'
 
+import { ArrowUp } from "./icons/interface_icons";
+
 const isBrowser = () => typeof window !== 'undefined'; //The approach recommended by Next.js
 
 function scrollToTop() {
@@ -9,8 +11,10 @@ function scrollToTop() {
 
 export default function ScrollToTopButton() {
     return (
-        <button className="w-fit p-4 border rounded-lg hover:border-negro hover:bg-negro hover:text-blanco transition-all" onClick={scrollToTop}>
-            <span></span> Volver arriba
+        <button 
+        className="z-40 group fixed right-4 bottom-24 xl:bottom-4 w-fit p-3 xl:p-4 border rounded-xl bg-blanco hover:border-verdeSage hover:bg-verdeSage hover:fill-blanco transition-all ease-aggresive duration-700" 
+        onClick={scrollToTop}>
+            <ArrowUp />
         </button>
     );
 }

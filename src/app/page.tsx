@@ -1,7 +1,6 @@
 'use client'
 
 import ProjectCard from './components/projectCard'
-import SmoothScroll from "./components/smoothScroll";
 import projects from "./data/projects_data.json"
 import { useState } from "react";
 import Link from 'next/link';

@@ -1,4 +1,3 @@
-import SmoothScroll from "../components/smoothScroll";
 import ScrollToTopButton from "../components/backTop_btn";
 import projects from "../data/projects_data.json"
 import ProjectInfoCard from "./ProjectInfoCard";
@@ -57,7 +56,7 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         </div>
 
         {/* Problem */}
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-4">
         <ProjectRichText 
         title="Problema a solucionar" 
         paragraph={item?.problem?.map((paragraph, index) => {
@@ -83,7 +82,7 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         </div>
 
         {/* Solution */}
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-4">
         <ProjectRichText
         title="Solución planteada" 
         paragraph={item?.solution?.map((paragraph, index) => {
@@ -115,7 +114,7 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         </div>
 
         {/* Final */}
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-4">
         <ProjectRichText 
         title="Producto final" 
         paragraph={item?.final?.map((paragraph, index) => {
@@ -143,7 +142,6 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
 
         {/*Footer*/}
         <div className="flex gap-4 flex-col">
-          <ScrollToTopButton />
           <MoreProjects_link slug={nextItem?.slug} project_name={nextItem?.name}/>
         </div>
       </div>

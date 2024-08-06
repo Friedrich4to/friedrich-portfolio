@@ -7,7 +7,7 @@ interface ImgBox {
 export default function ImgBox({ img_source }) {
 
     return(
-    <div className="relative w-full h-64 md:h-[500px] xl:h-80p  rounded-3xl">
+    <div className="relative w-full aspect-video  rounded-3xl">
     <Image
       src={img_source}
       fill

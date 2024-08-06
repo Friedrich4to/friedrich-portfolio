@@ -6,6 +6,7 @@ import { Header } from './components/Navbar'
 
 import localfont from "next/font/local";
 import type { Viewport } from 'next'
+import ScrollToTopButton from "./components/backTop_btn";
 
 const borna = localfont({
   src: [
@@ -39,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${borna.className} bg-blanco dark:bg-alt_negro`}>
       <body className="flex text-negro dark:text-blanco">
+        <ScrollToTopButton />
         <Header />
         {children}
       </body>

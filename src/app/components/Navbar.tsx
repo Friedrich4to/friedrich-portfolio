@@ -5,16 +5,17 @@ import React, { useEffect, useState } from "react";
 import Nav_Link from './nav_link';
 import projects from "../data/projects_data.json"
 import Logo from "./icons/main_logo"
-import { InstagramIcon } from "./icons/social_media_icons"
+import { InstagramIcon, LinkedinIcon } from "./icons/social_media_icons"
 import SocialLink from './social_link';
 import EmailButton from './copy_email_btn';
+import { RedirectIcon } from './icons/interface_icons';
 
 function MobileHeader({open, setOpen}){
   
   const [data, setData] = useState([...projects])
 
   return(
-    <header className={`fixed justify-end items-end bottom-8 right-8 h-screen w-screen z-40 transition-all ${open ? "flex" : "hidden"}`}>
+    <header className={`fixed justify-end items-end bottom-8 right-8 h-svh w-screen z-40 transition-all ${open ? "flex" : "hidden"}`}>
       {/*MobileHeader*/}
       <div className='flex flex-col gap-8 py-12 pr-12 pl-8 h-fit w-5/6 md:w-3/6 bg-gris rounded-xl'>
         
@@ -27,16 +28,21 @@ function MobileHeader({open, setOpen}){
           <EmailButton />
         </div>
 
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-2'>
         <p className="text-grisMid text-sm font-light">Navegación</p>
-          <Link className='p-4 w-full text-base rounded-lg border hover:text-blanco hover:border-verdeSage hover:bg-verdeSage' href="/#projects" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>Proyectos</Link>
+        <div className='grid grid-cols-2 grid-rows-2 gap-2'>
+          <Link className='col-span-2 p-4 w-full text-base rounded-lg border hover:text-blanco hover:border-verdeSage hover:bg-verdeSage' href="/#projects" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>Proyectos</Link>
           <Link className='p-4 w-full text-base rounded-lg border hover:text-blanco hover:border-verdeSage hover:bg-verdeSage' href="/carreer" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>Carrera</Link>
           <Link className='p-4 w-full text-base rounded-lg border hover:text-blanco hover:border-verdeSage hover:bg-verdeSage' href="/bio" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>Bio</Link>
         </div>
+        </div>
 
-        <div className='flex gap-4'>
-          <SocialLink link='https://www.instagram.com/friedrich4to/' icon={<InstagramIcon />}/>
-          <SocialLink link='https://www.artstation.com/fredemor' icon={<InstagramIcon />}/>
+        <div className='flex flex-col gap-2'>
+          <p className="text-grisMid text-sm font-light">Redes sociales</p>
+          <div className='flex gap-4'>
+              <a href="https://www.instagram.com/friedrich4to/" className='flex italic gap-1 text-base font-medium items-center' target='_blank' rel="noopener noreferrer">Instagram<RedirectIcon /></a>
+              <a href="https://www.instagram.com/friedrich4to/" className='flex italic gap-1 text-base font-medium items-center' target='_blank' rel="noopener noreferrer">LinkedIn<RedirectIcon /></a>
+          </div>
         </div>
       </div>
     </header>
@@ -137,9 +143,9 @@ export function Header() {
 
         <div>
           <p className="text-grisMid text-sm font-light">Redes sociales</p>
-          <div className='flex gap-4'>
-            <SocialLink link='https://www.instagram.com/friedrich4to/' icon={<InstagramIcon />}/>
-            <SocialLink link='https://www.artstation.com/fredemor' icon={<InstagramIcon />}/>
+          <div className='flex flex-col gap-3'>
+              <a href="https://www.instagram.com/friedrich4to/" className='flex italic gap-2 text-sm font-medium items-center' target='_blank' rel="noopener noreferrer">Instagram<RedirectIcon /></a>
+              <a href="https://www.instagram.com/friedrich4to/" className='flex italic gap-2 text-sm font-medium items-center' target='_blank' rel="noopener noreferrer">LinkedIn<RedirectIcon /></a>
           </div>
         </div>
       </div>
