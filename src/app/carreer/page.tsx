@@ -1,6 +1,5 @@
 'use client'
 
-import SmoothScroll from "../components/smoothScroll";
 import StudyJobCard from '../components/study_job_card'
 import academics_list from "../data/academics.json"
 import jobs_list from "../data/jobs.json"
