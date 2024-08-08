@@ -20,7 +20,7 @@ export default function Home() {
           <h1 className="text-5xl font-black lg:text-8xl">& Estudios</h1>
         </div>
 
-        <div className="flex flex-col gap-6 ">
+        <div className="flex flex-col gap-3">
           <h1 className="text-verdeSage text-3xl lg:text-5xl font-black">College Academics</h1>
           {
             academics.map((academic, index) => {
@@ -31,7 +31,7 @@ export default function Home() {
           }
         </div>
 
-        <div className="flex flex-col gap-6 ">
+        <div className="flex flex-col gap-3">
           <h1 className="text-verdeSage text-3xl lg:text-5xl font-black">Work Experience</h1>
           {
             jobs.map((job, index) => {

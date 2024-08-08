@@ -108,7 +108,7 @@ export function Header() {
 
       <MobileHeader open={open} setOpen={setOpen}/>
 
-      <div className="hidden xl:flex bg-gris dark:bg-alt_gris sticky top-0 h-screen w-16vw lg:w-80 py-32 px-12 flex-col gap-12 [&>*]:flex [&>*]:gap-4 [&>*]:flex-col">
+      <div className="hidden xl:flex bg-gris dark:bg-alt_gris sticky top-0 h-screen lg:w-72 py-32 px-12 flex-col gap-12 [&>*]:flex [&>*]:gap-3 [&>*]:flex-col">
         <div>
           <Link className='w-20 mb-5' href="/"><Logo /></Link>
           
@@ -116,8 +116,9 @@ export function Header() {
             <div className="bg-grisOs w-5 h-5 rounded"></div>
             Light
           </button>
-          <p className="py-2 px-4 w-fit rounded-lg border">{formattedTime}</p>
           <EmailButton />
+          {/* <p className="py-2 px-4 w-fit rounded-lg border">{formattedTime}</p> */}
+
 
         </div>
 
