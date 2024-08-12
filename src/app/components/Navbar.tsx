@@ -8,24 +8,30 @@ import Logo from "./icons/main_logo"
 import { InstagramIcon, LinkedinIcon } from "./icons/social_media_icons"
 import SocialLink from './social_link';
 import EmailButton from './copy_email_btn';
-import { RedirectIcon } from './icons/interface_icons';
+import { ArrowDown, RedirectIcon } from './icons/interface_icons';
+import { DarkModeBTN } from './darkmode_btn';
 
 function MobileHeader({open, setOpen}){
   
   const [data, setData] = useState([...projects])
 
   return(
-    <header className={`fixed justify-end items-end bottom-8 right-8 h-svh w-screen z-40 transition-all ${open ? "flex" : "hidden"}`}>
+    <header className={`fixed justify-end items-end bottom-8 right-8 h-svh w-screen z-40 transition-all duration-500 ${open ? "flex" : "hidden"}`}>
       {/*MobileHeader*/}
       <div className='flex flex-col gap-8 py-12 pr-12 pl-8 h-fit w-5/6 md:w-3/6 bg-gris rounded-xl'>
         
         <div className='flex flex-col gap-4'>
           <Link className='w-20 mb-5' href="/" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}><Logo /></Link>
-          <button className='py-2 px-2 w-fit text-sm rounded-lg border text-grisMid border-grisMid flex gap-2 items-center'>
-            <div className="bg-grisOs w-5 h-5 rounded"></div>
-            Light
-          </button>
+          <DarkModeBTN />
           <EmailButton />
+          <a href="/cv.pdf" 
+          download="CV - Frederick Pimentel 2024"
+          className='group w-fit flex items-center gap-2 hover:bg-verdeSage border hover:border-verdeSage hover:text-blanco rounded-lg p-2 text-xs font-medium transition-all'
+          target='_blank'
+          rel="noopener noreferrer"
+          >
+            Descargar CV <ArrowDown />
+          </a>
         </div>
 
         <div className='flex flex-col gap-2'>
@@ -108,21 +114,27 @@ export function Header() {
 
       <MobileHeader open={open} setOpen={setOpen}/>
 
-      <div className="hidden xl:flex bg-gris dark:bg-alt_gris sticky top-0 h-screen lg:w-72 py-32 px-12 flex-col gap-12 [&>*]:flex [&>*]:gap-3 [&>*]:flex-col">
+      <div className="hidden xl:flex bg-gris sticky top-0 h-screen lg:w-72 justify-center px-12 flex-col gap-12 [&>*]:flex [&>*]:gap-3 [&>*]:flex-col transition-all duration-300">
         <div>
           <Link className='w-20 mb-5' href="/"><Logo /></Link>
           
-          <button className='py-2 px-2 w-fit text-sm rounded-lg border text-grisMid border-grisMid flex gap-2 items-center'>
-            <div className="bg-grisOs w-5 h-5 rounded"></div>
-            Light
-          </button>
+          <DarkModeBTN />
+
           <EmailButton />
-          {/* <p className="py-2 px-4 w-fit rounded-lg border">{formattedTime}</p> */}
+
+          <a href="/cv.pdf" 
+          download="CV - Frederick Pimentel 2024"
+          className='group w-fit flex items-center gap-2 hover:bg-verdeSage border hover:border-verdeSage hover:text-blanco rounded-lg p-2 text-xs font-medium transition-all'
+          target='_blank'
+          rel="noopener noreferrer"
+          >
+            Descargar CV <ArrowDown />
+          </a>
 
 
         </div>
 
-        <div>
+        <nav>
           <p className="text-grisMid text-sm font-light">Proyectos UX-UI & Dev</p>
           <Link href="/" ><Nav_Link href="/">Todos los proyectos</Nav_Link></Link>
           {
@@ -134,19 +146,19 @@ export function Header() {
                 )
               })
             }
-        </div>
+        </nav>
 
         <div>
           <p className="text-grisMid text-sm font-light">Sobre mi</p>
-          <Link href="/carreer" ><Nav_Link href="/carreer">Career.</Nav_Link></Link>
-          <Link href="/bio" ><Nav_Link href="/bio">Bio.</Nav_Link></Link>
+          <Link href="/carreer" ><Nav_Link href="/carreer">Experiencia</Nav_Link></Link>
+          <Link href="/bio" ><Nav_Link href="/bio">Biografía</Nav_Link></Link>
         </div>
 
         <div>
           <p className="text-grisMid text-sm font-light">Redes sociales</p>
           <div className='flex flex-col gap-3'>
-              <a href="https://www.instagram.com/friedrich4to/" className='flex italic gap-2 text-sm font-medium items-center' target='_blank' rel="noopener noreferrer">Instagram<RedirectIcon /></a>
-              <a href="https://www.instagram.com/friedrich4to/" className='flex italic gap-2 text-sm font-medium items-center' target='_blank' rel="noopener noreferrer">LinkedIn<RedirectIcon /></a>
+              <a href="https://www.instagram.com/friedrich4to/" className='group flex italic gap-2 text-sm font-medium hover:text-verdeSage items-center' target='_blank' rel="noopener noreferrer">Instagram<RedirectIcon /></a>
+              <a href="https://www.linkedin.com/in/fredpimentel/" className='group flex italic gap-2 text-sm font-medium hover:text-verdeSage items-center' target='_blank' rel="noopener noreferrer">LinkedIn<RedirectIcon /></a>
           </div>
         </div>
       </div>

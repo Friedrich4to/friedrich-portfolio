@@ -4,7 +4,9 @@ import ProjectInfoCard from "./ProjectInfoCard";
 import ProjectRichText from "./InfoDivisionCard";
 import MoreProjects_link from "./NextPrevious";
 import ImgBox from "./ProjectImgBox";
-
+import { ArrowRight, RedirectIcon } from "../components/icons/interface_icons";
+import { Footer } from "../components/footer";
+import Link from "next/link";
 
 interface Params{
   params: {
@@ -35,24 +37,23 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
 
   return (
     <main className="flex justify-center w-screen ">
-  
-      <div className="fixed hidden z-50 bottom-6 right-6 bg-gris dark:bg-alt_gris py-6 px-4 rounded-2xl justify-center items-center gap-3">
-        <div className="bg-verdeSage h-4 w-4 rounded-sm"></div>
-        <div className="bg-grisMid dark:bg-negro h-2 w-2 rounded-sm"></div>
-        <div className="bg-grisMid dark:bg-negro h-2 w-2 rounded-sm"></div>
-        <div className="bg-grisMid dark:bg-negro h-2 w-2 rounded-sm"></div>
-      </div>      
-      <div className="w-full max-w-screen-xl mx-5vw my-24 flex flex-col gap-12 xl:my-48 lg:gap-12">
-
-        {/* Info */}
-        <ProjectInfoCard name={item?.name} type={item?.type} description={item?.description} roles={item?.roles} tech={item?.tech} colab={item?.colab} colab_rol={item?.colab_rol} colab_link={item?.colab_link} />        
+    
+      <div className="w-full max-w-screen-xl mx-5vw my-12 xl:mt-36 flex flex-col gap-12 lg:gap-14">
 
         {/* Banner item?.hero_media */}
         <div className="rounded-3xl">
-        <video autoPlay muted loop className="object-cover w-full h-full rounded-3xl">
+        <video autoPlay muted loop className="object-cover w-full aspect-video rounded-3xl">
           <source src={item?.hero_media} type="video/mp4" />
           Tu navegador no soporta la etiqueta de video.
         </video>
+        </div>
+
+        {/* Info */}
+        <ProjectInfoCard name={item?.name} type={item?.type} description={item?.description} roles={item?.roles} tech={item?.tech} colab={item?.colab} colab_rol={item?.colab_rol} colab_link={item?.colab_link} />    
+
+        <div className="flex items-center gap-8">
+          <div className="w-48 h-[2px] bg-negro"></div>
+          <div className="w-[4px] h-[4px] bg-negro"></div>
         </div>
 
         {/* Problem */}
@@ -140,10 +141,30 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         })} 
         </div>
 
+        {/* Pensamientos */}
+        <div className="flex flex-col gap-6">
+        <ProjectRichText 
+        title="Conclusiones finales" 
+        paragraph='Me paro sobre los hombros de gigantes que admiro al plantear el rediseño de la experiencia de usuario de este juego que tanto adoro.
+        Sin embargo, siempre hay cabida a la mejora y al final del día de esto se trata. Estas propuestas buscan hacer aún mejor una experiencia de por si ya es extraordinaria.'/>
+
+        <div className="flex gap-12 text-xl text-verdeSage stroke-verdeSage">
+          <a href="https://www.instagram.com/friedrich4to/" className='flex italic gap-2 font-medium items-center' target='_blank' rel="noopener noreferrer">Enlace al proyecto<RedirectIcon /></a>
+          <a href="https://www.instagram.com/friedrich4to/" className='flex italic gap-2 font-medium items-center' target='_blank' rel="noopener noreferrer">Prototipo de figma<RedirectIcon /></a>
+        </div>
+
+        </div>
+
         {/*Footer*/}
         <div className="flex gap-4 flex-col">
-          <MoreProjects_link slug={nextItem?.slug} project_name={nextItem?.name}/>
+
+          <Link href={nextItem?.slug} className="group w-fit p-4 border rounded-lg hover:border-verdeSage hover:bg-verdeSage hover:text-blanco transition-all">
+            <MoreProjects_link project_name={nextItem?.name}/>
+          </Link>
         </div>
+
+        <Footer />
+
       </div>
 
     </main>

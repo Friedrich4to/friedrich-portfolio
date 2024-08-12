@@ -1,5 +1,6 @@
 'use client'
 
+import { Footer } from '../components/footer';
 import StudyJobCard from '../components/study_job_card'
 import academics_list from "../data/academics.json"
 import jobs_list from "../data/jobs.json"
@@ -13,7 +14,7 @@ export default function Home() {
   return (
     <main className="flex justify-center w-screen">
 
-      <div className="w-full max-w-screen-xl mx-5vw my-24 flex flex-col gap-12 xl:my-48 lg:gap-16">
+      <div className="w-full max-w-screen-xl mx-5vw my-12 xl:mt-36 flex flex-col gap-12 lg:gap-16">
 
         <div>
           <h1 className="text-5xl font-black lg:text-8xl">Experiencia</h1>
@@ -21,7 +22,8 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-3">
-          <h1 className="text-verdeSage text-3xl lg:text-5xl font-black">College Academics</h1>
+          <h1 className="text-verdeSage text-3xl lg:text-5xl font-black">Estudios academicos</h1>
+          <div className='grid grid-cols-1 lg:grid-cols-1 gap-12'>
           {
             academics.map((academic, index) => {
               return(
@@ -29,10 +31,12 @@ export default function Home() {
               )
             })
           }
+          </div>
         </div>
 
         <div className="flex flex-col gap-3">
-          <h1 className="text-verdeSage text-3xl lg:text-5xl font-black">Work Experience</h1>
+          <h1 className="text-verdeSage text-3xl lg:text-5xl font-black">Experiencia laboral</h1>
+          <div className='grid grid-cols-1 lg:grid-cols-1 gap-8'>
           {
             jobs.map((job, index) => {
               return(
@@ -40,7 +44,10 @@ export default function Home() {
               )
             })
           }
+          </div>
         </div>
+
+        <Footer />
 
       </div>
     </main>

@@ -1,5 +1,6 @@
 // components/EmailButton.tsx
 import React, { useState } from 'react';
+import { CopyIcon } from './icons/interface_icons';
 
 const EmailButton: React.FC = () => {
   const [hovered, setHovered] = useState(false);
@@ -29,13 +30,13 @@ const EmailButton: React.FC = () => {
 
   return (
     <button
-      className='group flex items-center gap-2 hover:bg-verdeSage border hover:border-verdeSage hover:text-blanco rounded-lg p-2 text-xs font-light transition-all'
+      className='group flex w-fit items-center gap-2 border hover:border-verdeSage hover:bg-verdeSage hover:text-blanco rounded-lg p-2 text-xs font-light transition-all'
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={handleClick}
     >
-      <span className='w-3 h-5 bg-negro group-hover:bg-blanco transition-all'></span>
-      {hovered ? 'Copiar al portapapeles' : buttonText}
+      <CopyIcon />
+      {buttonText}
     </button>
   );
 };

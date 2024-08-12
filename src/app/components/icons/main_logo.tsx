@@ -1,6 +1,6 @@
 const Logo = () =>{
     return (
-        <svg viewBox="0 0 81 98"xmlns="http://www.w3.org/2000/svg" className="fill-negro hover:fill-verdeSage transition-all dark:fill-blanco">
+        <svg viewBox="0 0 81 98"xmlns="http://www.w3.org/2000/svg" className="fill-negro hover:fill-verdeSage transition-all">
             <g>
 
             <path d="M68.4074 97.1993C74.9028 97.1993 80.1684 91.9874 80.1684 85.5583C80.1684 79.1291 74.9028 73.9172 68.4074 73.9172C61.9119 73.9172 56.6464 79.1291 56.6464 85.5583C56.6464 91.9874 61.9119 97.1993 68.4074 97.1993Z"/>

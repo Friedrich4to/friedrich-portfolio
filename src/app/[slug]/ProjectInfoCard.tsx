@@ -22,7 +22,7 @@ export default function ProjectInfoCard(props) {
             <p className="max-w-screen-lg text-2xl lg:text-4xl font-light">{props.description}</p>
           </div>
 
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-2">
 
             <div className="flex gap-2 items-baseline">
                 <span className="text-grisMid text-1xl font-medium italic">Estado:</span><p className="text-base font-light lg:text-xl">Terminado</p>
@@ -38,7 +38,7 @@ export default function ProjectInfoCard(props) {
               <p className="text-base font-light lg:text-xl">{highlightRoles(props.roles)}</p>
             </div>
 
-            <div className="flex gap-2 items-baseline">
+            <div className="hidden gap-2 items-baseline">
               <span className="text-grisMid text-1xl font-medium italic ">Colaboradores:</span>
               <p className="text-base font-light lg:text-xl">{highlightRoles(props.colab_rol)} <a className="text-verdeSage underline italic" href={props.colab_link} target="_blank">{props.colab}</a></p>
             </div>

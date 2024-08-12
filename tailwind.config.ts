@@ -11,14 +11,12 @@ const config: Config = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      'blanco': '#E1E0DD',
-      'negro': '#383838',
-      'gris': '#D1D2CD',
-      'grisMid': '#8A8A8A',
-      'grisOs': '#787A75',
-      'verdeSage': '#497A62',
-      'alt_negro': '#161616',
-      'alt_gris': '#0D0D0D',
+      'blanco': 'var(--blanco)',
+      'negro': 'var(--negro)',
+      'gris': 'var(--gris)',
+      'grisMid': 'var(--grisMid)',
+      'grisOs': 'var(--grisOs)',
+      'verdeSage': 'var(--verdeSage)',
     },
 
     extend: {

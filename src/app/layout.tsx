@@ -38,8 +38,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${borna.className} bg-blanco dark:bg-alt_negro`}>
-      <body className="flex text-negro dark:text-blanco">
+    <html lang="en" className={`${borna.className} bg-blanco transition-all duration-500`}>
+      <body className="flex text-negro">
         <ScrollToTopButton />
         <Header />
         {children}
