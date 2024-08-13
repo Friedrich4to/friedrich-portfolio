@@ -3,13 +3,13 @@
       "thumbnail": "/images/witcher/barra2.png",
       "name": "Witcher 3 HUD",
       "slug": "witchergui",
-      "type": "Propuesta de rediseño",
+      "type": "Caso de estudio",
+      "state": "Terminado",
       "description": "A reimagination of the way The Witcher 3 Stamina Bar is placed for the sake of gameplay comfort and quick understanding of the current state Geralt abilities are in.",
       "roles": "UX research, UI Design & Motion Animation",
       "tech": "Illustrator & After Effects",
-      "colab": " ",
-      "colab_rol": "No hubo",
-      "colab_link": " ",
+      "link": "https://www.artstation.com/artwork/g04lGx",
+      "prototype": "https://www.figma.com/proto/Do843XMRA5hYNaBAYNeeJm/Witcher-3-Redesign?page-id=0%3A1&node-id=1-2&viewport=-5247%2C-1494%2C0.44&t=CNKME3VMEE6g4gzO-1&scaling=contain&content-scaling=fixed",
       "hero_media": "/images/witcher/witchervideo.mp4",
       "problem": [
         {"paragraph": "In the Witcher 3 there is constant and frenetic combat. While you are destroying another folks you may aswell pay attention to the state of your character and his abilities."},
@@ -18,7 +18,8 @@
       "problem_media": [
           {
             "type": "image",
-            "media": "/images/witcher/problem.png"
+            "media": "/images/witcher/problem.png",
+            "note": ""
           }
         ],
       "solution": [
@@ -32,11 +33,14 @@
         "solution_media": [
           {
             "type": "image",
-            "media": "/images/witcher/sketch3.png"
+            "media": "/images/witcher/sketch3.png",
+            "note": "Bocetos de re-posicionamente de la barra de energia y habilidades"
+            
           },
           {
             "type": "image",
-            "media": "/images/witcher/sketch1.png"
+            "media": "/images/witcher/sketch1.png",
+            "note": ""
           }
         ],
         "final": [
@@ -45,218 +49,27 @@
         "final_media": [
           {
             "type": "image",
-            "media": "/images/witcher/barra2.png"
+            "media": "/images/witcher/barra2.png",
+            "note": ""
           },
           {
             "type": "image",
-            "media": "/images/witcher/barra.png"
+            "media": "/images/witcher/barra.png",
+            "note": ""
           },
           {
             "type": "image",
-            "media": "/images/witcher/barra3.png"
+            "media": "/images/witcher/barra3.png",
+            "note": ""
           },
           {
             "type": "video",
             "media": "/images/witcher/witchervideo.mp4"
           }
+        ],
+        "conclusion": [
+          {"paragraph": "Me paro sobre los hombros de gigantes que admiro al plantear el rediseño de la experiencia de usuario de este videojuego."},
+          {"paragraph": "Sin embargo, siempre hay cabida a la mejora y al final del día de esto se trata. Estas propuestas buscan hacer aún mejor una experiencia de por si ya es extraordinaria."}
         ]
-  },
-  {
-    "thumbnail": "/images/cocont/closeup.jpg",
-    "name": "Caribbean Cinemas App",
-    "slug": "caribbean",
-    "type": "Rediseño de Mobile App",
-    "description": "A reimagination of the way The Witcher 3 Stamina Bar is placed for the sake of gameplay comfort and quick understanding of the current state Geralt abilities are in.",
-    "roles": "UX research - UI Design - Motion Animation",
-    "tech": "Illustrator - After Effects - Paper and pencil",
-    "colab": "Paola Placeres (Palola)",
-    "colab_rol": "Industrial Design support",
-    "colab_link": "https://heypalola.com/",
-    "hero_media": "/images/witcher/witchervideo.mp4",
-    "problem": [
-      {"paragraph": "In the Witcher 3 there is constant and frenetic combat. While you are destroying another folks you may aswell pay attention to the state of your character and his abilities."},
-      {"paragraph": "In the Witcher 3 there is constant and frenetic combat. While you are destroying another folks you may aswell pay attention to the state of your character and his abilities."}
-    ],
-    "problem_media": [
-        {
-          "type": "image",
-          "media": "/images/witcher/problem.png"
-        }
-      ],
-    "solution": [
-      {"paragraph": "Basing on references of others game modern approaches to the issue, decided to move the dynamic Hud elements to a more centric part of the screen, making them easy to track at all moments."}
-    ],
-    "requirements": [
-        {"requirement": "More redability of the user interface."},
-        {"requirement": "Maintaining the Game aestethics."},
-        {"requirement": "Seamless integration with the combat."}
-      ],
-      "solution_media": [
-        {
-          "type": "image",
-          "media": "/images/witcher/sketch1.png"
-        },
-        {
-          "type": "image",
-          "media": "/images/witcher/sketch2.png"
-        },
-        {
-          "type": "image",
-          "media": "/images/witcher/sketch3.png"
-        }
-      ],
-      "final": [
-        {"paragraph": "The project wrapped up in a reactive version of the Stamina Bar that moves dynamicly with the player, letting him now at every moment the state of Geralt, but not being distracting."}
-      ],
-      "final_media": [
-        {
-          "type": "image",
-          "media": "/images/witcher/barra2.png"
-        },
-        {
-          "type": "image",
-          "media": "/images/witcher/barra.png"
-        },
-        {
-          "type": "image",
-          "media": "/images/witcher/barra3.png"
-        },
-        {
-          "type": "video",
-          "media": "/images/witcher/witchervideo.mp4"
-        }
-      ]
-  },
-  {
-    "thumbnail": "/images/vw/vwpro.png",
-    "name": "Proyecto VW",
-    "slug": "vw",
-    "type": "GUI Redesign Proposal",
-    "description": "A reimagination of the way The Witcher 3 Stamina Bar is placed for the sake of gameplay comfort and quick understanding of the current state Geralt abilities are in.",
-    "roles": "UX research, UI Design & Motion Animation",
-    "tech": "Illustrator & After Effects",
-    "colab": " ",
-    "colab_rol": "No hubo",
-    "colab_link": " ",
-    "hero_media": "/images/witcher/witchervideo.mp4",
-    "problem": [
-      {"paragraph": "In the Witcher 3 there is constant and frenetic combat. While you are destroying another folks you may aswell pay attention to the state of your character and his abilities."},
-      {"paragraph": "In the Witcher 3 there is constant and frenetic combat. While you are destroying another folks you may aswell pay attention to the state of your character and his abilities."}
-    ],
-    "problem_media": [
-        {
-          "type": "image",
-          "media": "/images/witcher/problem.png"
-        }
-      ],
-    "solution": [
-      {"paragraph": "Basing on references of others game modern approaches to the issue, decided to move the dynamic Hud elements to a more centric part of the screen, making them easy to track at all moments."}
-    ],
-    "requirements": [
-        {"requirement": "More redability of the user interface."},
-        {"requirement": "Maintaining the Game aestethics."},
-        {"requirement": "Seamless integration with the combat."}
-      ],
-      "solution_media": [
-        {
-          "type": "image",
-          "media": "/images/witcher/sketch1.png"
-        },
-        {
-          "type": "image",
-          "media": "/images/witcher/sketch2.png"
-        },
-        {
-          "type": "image",
-          "media": "/images/witcher/sketch3.png"
-        }
-      ],
-      "final": [
-        {"paragraph": "The project wrapped up in a reactive version of the Stamina Bar that moves dynamicly with the player, letting him now at every moment the state of Geralt, but not being distracting."}
-      ],
-      "final_media": [
-        {
-          "type": "image",
-          "media": "/images/witcher/barra2.png"
-        },
-        {
-          "type": "image",
-          "media": "/images/witcher/barra.png"
-        },
-        {
-          "type": "image",
-          "media": "/images/witcher/barra3.png"
-        },
-        {
-          "type": "video",
-          "media": "/images/witcher/witchervideo.mp4"
-        }
-      ]
-  },
-  {
-    "thumbnail": "/images/capiment/capimentportada.png",
-    "name": "Capiment Website",
-    "slug": "capiment",
-    "type": "Sitio web con panel de administración",
-    "description": "Sitio web para mostrar los proyectos hechos por compañia de construcción y diseño arquitectonico de manera limpia, directa y elegante, permitiendo también manejar el contenido de manera comoda.",
-    "roles": "UX research, UI Design & Desarrollo Full Stack",
-    "tech": "Figma, NextJS & Payload CMS",
-    "colab": " ",
-    "colab_rol": "No hubo",
-    "colab_link": " ",
-    "hero_media": "/images/witcher/witchervideo.mp4",
-    "problem": [
-      {"paragraph": "In the Witcher 3 there is constant and frenetic combat. While you are destroying another folks you may aswell pay attention to the state of your character and his abilities."},
-      {"paragraph": "In the Witcher 3 there is constant and frenetic combat. While you are destroying another folks you may aswell pay attention to the state of your character and his abilities."}
-    ],
-    "problem_media": [
-        {
-          "type": "image",
-          "media": "/images/witcher/problem.png"
-        }
-      ],
-    "solution": [
-      {"paragraph": "Basing on references of others game modern approaches to the issue, decided to move the dynamic Hud elements to a more centric part of the screen, making them easy to track at all moments."}
-    ],
-    "requirements": [
-        {"requirement": "More redability of the user interface."},
-        {"requirement": "Maintaining the Game aestethics."},
-        {"requirement": "Seamless integration with the combat."}
-      ],
-      "solution_media": [
-        {
-          "type": "image",
-          "media": "/images/witcher/sketch1.png"
-        },
-        {
-          "type": "image",
-          "media": "/images/witcher/sketch2.png"
-        },
-        {
-          "type": "image",
-          "media": "/images/witcher/sketch3.png"
-        }
-      ],
-      "final": [
-        {"paragraph": "The project wrapped up in a reactive version of the Stamina Bar that moves dynamicly with the player, letting him now at every moment the state of Geralt, but not being distracting."}
-      ],
-      "final_media": [
-        {
-          "type": "image",
-          "media": "/images/witcher/barra2.png"
-        },
-        {
-          "type": "image",
-          "media": "/images/witcher/barra.png"
-        },
-        {
-          "type": "image",
-          "media": "/images/witcher/barra3.png"
-        },
-        {
-          "type": "video",
-          "media": "/images/witcher/witchervideo.mp4"
-        }
-      ]
   }
 ]

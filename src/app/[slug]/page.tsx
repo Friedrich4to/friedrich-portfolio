@@ -49,7 +49,7 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         </div>
 
         {/* Info */}
-        <ProjectInfoCard name={item?.name} type={item?.type} description={item?.description} roles={item?.roles} tech={item?.tech} colab={item?.colab} colab_rol={item?.colab_rol} colab_link={item?.colab_link} />    
+        <ProjectInfoCard name={item?.name} type={item?.type} description={item?.description} roles={item?.roles} tech={item?.tech} state={item?.state}/>    
 
         <div className="flex items-center gap-8">
           <div className="w-48 h-[2px] bg-negro"></div>
@@ -70,7 +70,7 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         return (
           <div key={index}>
             {media.type === 'image' ? (
-              <ImgBox img_source={media?.media}/>
+              <ImgBox img_source={media?.media} note={media?.note}/>
             ) : (
                 <video autoPlay muted loop className="object-cover rounded-3xl">
                   <source src={media?.media} type="video/mp4" />
@@ -102,7 +102,7 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         return (
           <div key={index}>
             {media.type === 'image' ? (
-              <ImgBox img_source={media?.media}/>
+              <ImgBox img_source={media?.media} note={media?.note}/>
             ) : (
                 <video autoPlay muted loop className="object-cover rounded-3xl">
                   <source src={media?.media} type="video/mp4" />
@@ -129,7 +129,7 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
         return (
           <div key={index}>
             {media.type === 'image' ? (
-              <ImgBox img_source={media?.media}/>
+              <ImgBox img_source={media?.media} note={media?.note}/>
             ) : (
                 <video autoPlay muted loop className="object-cover rounded-3xl">
                   <source src={media?.media} type="video/mp4" />
@@ -143,15 +143,18 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
 
         {/* Pensamientos */}
         <div className="flex flex-col gap-6">
-        <ProjectRichText 
-        title="Conclusiones finales" 
-        paragraph='Me paro sobre los hombros de gigantes que admiro al plantear el rediseño de la experiencia de usuario de este juego que tanto adoro.
-        Sin embargo, siempre hay cabida a la mejora y al final del día de esto se trata. Estas propuestas buscan hacer aún mejor una experiencia de por si ya es extraordinaria.'/>
+          <ProjectRichText 
+          title="Conclusiones finales" 
+          paragraph={item?.conclusion?.map((conclusiones, index) => {
+            return (
+                <p key={index} className="flex gap-2 items-center">{conclusiones?.paragraph}</p>
+              );
+            })}/>
 
-        <div className="flex gap-12 text-xl text-verdeSage stroke-verdeSage">
-          <a href="https://www.instagram.com/friedrich4to/" className='flex italic gap-2 font-medium items-center' target='_blank' rel="noopener noreferrer">Enlace al proyecto<RedirectIcon /></a>
-          <a href="https://www.instagram.com/friedrich4to/" className='flex italic gap-2 font-medium items-center' target='_blank' rel="noopener noreferrer">Prototipo de figma<RedirectIcon /></a>
-        </div>
+          <div className="flex gap-12 text-xl text-verdeSage stroke-verdeSage">
+            <a href={item?.link} className='flex italic gap-2 font-medium items-center' target='_blank' rel="noopener noreferrer">Enlace al proyecto<RedirectIcon /></a>
+            <a href={item?.prototype} className='flex italic gap-2 font-medium items-center' target='_blank' rel="noopener noreferrer">Prototipo<RedirectIcon /></a>
+          </div>
 
         </div>
 

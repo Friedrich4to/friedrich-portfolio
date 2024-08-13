@@ -1,7 +1,18 @@
 import Image from "next/image";
 import { Footer } from "../components/footer";
 
-export default function Home() {
+async function getTest(){
+
+  const res = await fetch('http://localhost:3000/api/collection/designer/66bad9d9761cab501b9cfd3f')
+  const data = await res.json()
+  return data.name
+}
+
+export default async function Bio() {
+
+  const test = await getTest()
+  console.log({test})
+
   return (
     <main className="flex justify-center w-screen">
       <div className="w-full max-w-screen-xl mx-5vw my-12 xl:mt-36 flex flex-col gap-12 lg:gap-16">
@@ -15,6 +26,9 @@ export default function Home() {
           <p className='text-base lg:text-xl font-light'>Nacido en el 2001, viviendo actualmente en <span className="font-black">República Dominicana.</span></p>
           <p className='text-base lg:text-xl font-light'>Soy un amante del diseño en todas sus formas, ya sean objetos, experiencias, espacios, videojuegos o cualquier área en la que la planeación, intensión e ingenio tengan cabida.</p>
           <p className='text-base lg:text-xl font-light'>Me caracteriza el ser intenso y extrovertido, cualidades que se materializan en el esfuerzo de mi trabajo y en mi forma de experimentar el mundo. </p>
+
+          {test}
+
           </div>
 
           <div className="flex flex-col gap-2">
