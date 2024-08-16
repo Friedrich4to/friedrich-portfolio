@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Footer } from "../components/footer";
 
-export default async function Bio() {
+export default function Bio() {
 
   return (
     <main className="flex justify-center w-screen">
@@ -16,7 +16,6 @@ export default async function Bio() {
           <p className='text-base lg:text-xl font-light'>Nacido en el 2001, viviendo actualmente en <span className="font-black">República Dominicana.</span></p>
           <p className='text-base lg:text-xl font-light'>Soy un amante del diseño en todas sus formas, ya sean objetos, experiencias, espacios, videojuegos o cualquier área en la que la planeación, intensión e ingenio tengan cabida.</p>
           <p className='text-base lg:text-xl font-light'>Me caracteriza el ser intenso y extrovertido, cualidades que se materializan en el esfuerzo de mi trabajo y en mi forma de experimentar el mundo. </p>
-
           </div>
 
           <div className="flex flex-col gap-2">

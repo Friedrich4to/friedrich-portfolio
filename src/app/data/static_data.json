@@ -1,0 +1,23 @@
+{
+    "header": 
+        {
+        "description" : "Digital product designer, especialized in UX-UI Design & Front-End Development.",
+        "sub_description" : "+ Motion Graphics, 3D Design & Visual identity"
+        },
+
+    "carreer": 
+            {
+            "title_line1" : "Experiencia",
+            "title_line2" : "& Estudios.",
+            "academic_title" : "Estudios academicos",
+            "job_title" : "Experiencia laboral"
+            }, 
+
+    "navbar": 
+            {
+            "section_1" : "Proyectos UX-UI & Dev.",
+            "section_2" : "Sobre mi",
+            "section_3" : "Redes sociales"
+            }     
+
+}

@@ -30,7 +30,7 @@ const EmailButton: React.FC = () => {
 
   return (
     <button
-      className='group flex w-fit items-center gap-2 border hover:border-verdeSage hover:bg-verdeSage hover:text-blanco rounded-lg p-2 text-xs font-light transition-all'
+      className='group flex w-fit items-center gap-2 border hover:border-verdeSage hover:bg-verdeSage hover:text-blanco rounded-lg p-2 text-xs font-light'
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={handleClick}

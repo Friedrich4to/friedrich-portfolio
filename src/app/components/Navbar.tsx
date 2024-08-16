@@ -26,7 +26,7 @@ function MobileHeader({open, setOpen}){
           <EmailButton />
           <a href="/cv.pdf" 
           download="CV - Frederick Pimentel 2024"
-          className='group w-fit flex items-center gap-2 hover:bg-verdeSage border hover:border-verdeSage hover:text-blanco rounded-lg p-2 text-xs font-medium transition-all'
+          className='group w-fit flex items-center gap-2 hover:bg-verdeSage border hover:border-verdeSage hover:text-blanco rounded-lg p-2 text-xs font-medium'
           target='_blank'
           rel="noopener noreferrer"
           >
@@ -124,11 +124,11 @@ export function Header() {
 
           <a href="/cv.pdf" 
           download="CV - Frederick Pimentel 2024"
-          className='group w-fit flex items-center gap-2 hover:bg-verdeSage border hover:border-verdeSage hover:text-blanco rounded-lg p-2 text-xs font-medium transition-all'
+          className='group w-fit flex items-center gap-2 hover:bg-verdeSage border hover:border-verdeSage hover:text-blanco rounded-lg p-2 text-xs font-medium'
           target='_blank'
           rel="noopener noreferrer"
           >
-            Descargar CV <ArrowDown />
+            Curriculum <ArrowDown />
           </a>
 
 

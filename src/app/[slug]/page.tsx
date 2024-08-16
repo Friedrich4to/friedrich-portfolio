@@ -1,18 +1,12 @@
-import ScrollToTopButton from "../components/backTop_btn";
 import projects from "../data/projects_data.json"
 import ProjectInfoCard from "./ProjectInfoCard";
 import ProjectRichText from "./InfoDivisionCard";
 import MoreProjects_link from "./NextPrevious";
 import ImgBox from "./ProjectImgBox";
-import { ArrowRight, RedirectIcon } from "../components/icons/interface_icons";
+import { RedirectIcon } from "../components/icons/interface_icons";
 import { Footer } from "../components/footer";
 import Link from "next/link";
 
-interface Params{
-  params: {
-    slug: string
-  }
-}
 
 interface item {
   img: {
@@ -26,11 +20,11 @@ interface nextItem {
   };
 }
 
-const Home:React.FC<Params> = ({ params: {slug}}) => {
+export default function DynamicPage({ params }: { params: { slug: string } }) {
 
-  const item = projects.find((item) => item.slug === slug);
+  const item = projects.find((item) => item.slug === params.slug);
 
-  const currentIndex = projects.findIndex((item) => item.slug === slug);
+  const currentIndex = projects.findIndex((item) => item.slug === params.slug);
   const nextItem = currentIndex !== -1 && currentIndex < projects.length - 1 
   ? projects[currentIndex + 1] 
   : projects[0];
@@ -173,5 +167,3 @@ const Home:React.FC<Params> = ({ params: {slug}}) => {
     </main>
   );
 }
-
-export default Home;
