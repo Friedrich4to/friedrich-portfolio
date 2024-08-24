@@ -102,7 +102,7 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
           <div className="flex flex-col lg:flex-row gap-12 text-xl text-verdeSage stroke-verdeSage">
             {item?.links?.map((link, index) => {
               return (
-                <a href={link.link} className='flex italic gap-2 font-medium items-center' target='_blank' rel="noopener noreferrer">{link.label}<RedirectIcon /></a>
+                <a key={index} href={link.link} className='flex italic gap-2 font-medium items-center' target='_blank' rel="noopener noreferrer">{link.label}<RedirectIcon /></a>
                 );
               })}
           </div>
