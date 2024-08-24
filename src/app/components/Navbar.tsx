@@ -24,7 +24,7 @@ function MobileHeader({open, setOpen}){
           <Link className='w-20 mb-5' href="/" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}><Logo /></Link>
           <DarkModeBTN />
           <EmailButton />
-          <a href="/cv.pdf" 
+          <a href="/CV - Frederick Pimentel 2024.pdf" 
           download="CV - Frederick Pimentel 2024"
           className='group w-fit flex items-center gap-2 hover:bg-verdeSage border hover:border-verdeSage hover:text-blanco rounded-lg p-2 text-xs font-medium'
           target='_blank'
@@ -122,7 +122,7 @@ export function Header() {
 
           <EmailButton />
 
-          <a href="/cv.pdf" 
+          <a href="/CV - Frederick Pimentel 2024.pdf" 
           download="CV - Frederick Pimentel 2024"
           className='group w-fit flex items-center gap-2 hover:bg-verdeSage border hover:border-verdeSage hover:text-blanco rounded-lg p-2 font-medium'
           target='_blank'
