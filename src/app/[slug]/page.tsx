@@ -35,7 +35,7 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
   return (
     <main className="flex justify-center w-screen ">
     
-      <div className="w-full lg:max-w-screen-lg mx-5vw my-12 xl:mt-36 flex flex-col gap-12 lg:gap-24">
+      <div className="w-full 2xl:max-w-screen-lg xl:max-w-[80%]  mx-5vw my-12 xl:mt-36 flex flex-col gap-12 lg:gap-24">
 
         {/* HeroBanner */}
         <div className="rounded-3xl">

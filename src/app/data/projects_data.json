@@ -1,6 +1,6 @@
 [
   {
-      "thumbnail": "/images/witcher/witcherthumbnail.jpg",
+      "thumbnail": "/images/witcher/hifi_1.jpg",
       "name": "Witcher 3 HUD",
       "slug": "witchergui",
       "type": "Game interface Case study",
@@ -8,7 +8,7 @@
       "description": "A reimagination of the way The Witcher 3 Stamina Bar is placed for the sake of gameplay comfort and quick understanding of the current state Geralt abilities are in.",
       "roles": "UX research, UI Design & Motion Animation",
       "tech": "Illustrator & After Effects",
-      "hero_media": "/images/witcher/main.mp4",
+      "hero_media": "/images/witcher/hifi_video_1_v2.mp4",
       "content_blocks": [
         {
           "title": "The interface interrupt the gameplay",
@@ -87,7 +87,12 @@
           "block_multimedia": [
             {
               "type": "image",
-              "media": "/images/witcher/barra.png",
+              "media": "/images/witcher/old_1.jpg",
+              "note": ""
+            },
+            {
+              "type": "image",
+              "media": "/images/witcher/old_2.jpg",
               "note": ""
             }
           ]
@@ -100,7 +105,7 @@
           "block_multimedia": [
             {
               "type": "video",
-              "media": "/images/witcher/main.mp4",
+              "media": "/images/witcher/hifi_video_1_v2.mp4",
               "note": ""
             },
             {
@@ -135,5 +140,101 @@
         }
       ]
       
+  },
+  {
+    "thumbnail": "/images/3d/hv3_1.jpg",
+    "name": "3D Work Collection",
+    "slug": "3d",
+    "type": "Showcase",
+    "state": "Always growing",
+    "description": "A selected collection of my 3D visualization work.",
+    "roles": "Gallery Showcase",
+    "tech": "Blender",
+    "hero_media": "/images/3d/anim.mp4",
+    "content_blocks": [
+      {
+        "title": "Environments",
+        "block_paragraphs": [
+          {"paragraph": "My collection of environments mainly made from scratch using blueprints and some 3D assets for the furniture."}
+        ],
+        "block_multimedia": [
+          {
+            "type": "image",
+            "media": "/images/3d/vhi_2.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/vhi_1.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/hv3_1.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/hv3_2.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/sr.jpg",
+            "note": ""
+          },
+          {
+            "type": "video",
+            "media": "/images/3d/anim.mp4",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/hr2.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/livecrown.jpg",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "title": "Products",
+        "block_paragraphs": [
+          {"paragraph": "My collection of product visualizations."}
+        ],
+        "block_multimedia": [
+          {
+            "type": "image",
+            "media": "/images/3d/cocont_1.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/cocont_2.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/divine_1.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/divine_2.jpg",
+            "note": ""
+          }
+        ]
+      }
+    ],
+    "conclusion": [
+      {"paragraph": "This is a always improving gallery of my 3D work, a complementary skill for the bigger goal of mine: create better experiences."}
+    ],
+    "links": [
+
+    ]
+    
   }
 ]
