@@ -8,7 +8,7 @@
       "description": "A reimagination of the way The Witcher 3 Stamina Bar is placed for the sake of gameplay comfort and quick understanding of the current state Geralt abilities are in.",
       "roles": "UX research, UI Design & Motion Animation",
       "tech": "Illustrator & After Effects",
-      "hero_media": "/images/witcher/witchervideo.mp4",
+      "hero_media": "/images/witcher/main.mp4",
       "content_blocks": [
         {
           "title": "The interface interrupt the gameplay",
@@ -98,6 +98,11 @@
             {"paragraph": "The solution provided consisted in turning the stamina bar into a dynamic wheel that follows Geraldt body during combat."}
           ],
           "block_multimedia": [
+            {
+              "type": "video",
+              "media": "/images/witcher/main.mp4",
+              "note": ""
+            },
             {
               "type": "image",
               "media": "/images/witcher/hifi_1.jpg",
