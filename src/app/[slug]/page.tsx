@@ -20,9 +20,12 @@ interface nextItem {
   };
 }
 
+
+
 export default function DynamicPage({ params }: { params: { slug: string } }) {
 
   const item = projects.find((item) => item.slug === params.slug);
+  const bloques = item?.content_blocks
 
   const currentIndex = projects.findIndex((item) => item.slug === params.slug);
   const nextItem = currentIndex !== -1 && currentIndex < projects.length - 1 
@@ -32,14 +35,14 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
   return (
     <main className="flex justify-center w-screen ">
     
-      <div className="w-full max-w-screen-xl mx-5vw my-12 xl:mt-36 flex flex-col gap-12 lg:gap-14">
+      <div className="w-full lg:max-w-screen-lg mx-5vw my-12 xl:mt-36 flex flex-col gap-12 lg:gap-24">
 
-        {/* Banner item?.hero_media */}
+        {/* HeroBanner */}
         <div className="rounded-3xl">
-        <video autoPlay muted loop className="object-cover w-full aspect-video rounded-3xl">
-          <source src={item?.hero_media} type="video/mp4" />
-          Tu navegador no soporta la etiqueta de video.
-        </video>
+          <video autoPlay muted loop className="object-cover w-full aspect-video rounded-3xl bg-gris animate-fade-bg">
+            <source src={item?.hero_media} type="video/mp4" />
+            Tu navegador no soporta la etiqueta de video.
+          </video>
         </div>
 
         {/* Info */}
@@ -50,92 +53,43 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
           <div className="w-[4px] h-[4px] bg-negro"></div>
         </div>
 
-        {/* Problem */}
-        <div className="flex flex-col gap-6">
-        <ProjectRichText 
-        title="Problema a solucionar" 
-        paragraph={item?.problem?.map((paragraph, index) => {
-        return (
-            <p key={index} className="flex gap-2 items-center">{paragraph?.paragraph}</p>
-          );
-        })}/>
+        {/*Blocks Array*/}
+        <div className="flex flex-col gap-24">
+          {item?.content_blocks.map(({title, block_paragraphs, block_multimedia}) =>{
+            return (
+            <div key={title} className="flex flex-col gap-4">
+              {/*Title*/}
+              <h1 className="text-3xl font-black">{title}</h1>
 
-        {item?.problem_media?.map((media, index) => {
-        return (
-          <div key={index}>
-            {media.type === 'image' ? (
-              <ImgBox img_source={media?.media} note={media?.note}/>
-            ) : (
-                <video autoPlay muted loop className="object-cover rounded-3xl">
-                  <source src={media?.media} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-            )}
-          </div>
-          );
-        })} 
+              {/*Paragraphs array*/}
+              {block_paragraphs.map((paragraph, index) => {
+                return (
+                    <p key={index} className="flex flex-col gap-4 font-light dark:text-grisOs text-base lg:text-xl max-w-screen-md">{paragraph?.paragraph}</p>
+                  );
+              })}
+            
+              {/*Multimedia array*/}
+              {block_multimedia.map((media, index) => {
+              return (
+                <div key={index}>
+                  {media.type === 'image' ? (
+                    <ImgBox img_source={media?.media} note={media?.note}/>
+                  ) : (
+                    <video autoPlay playsInline muted loop className="object-cover rounded-3xl">
+                      <source src={media?.media} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  )}
+                </div>
+                );
+              })}
+            </div>
+            )
+          }
+          )}
         </div>
 
-        {/* Solution */}
-        <div className="flex flex-col gap-6">
-        <ProjectRichText
-        title="Solución planteada" 
-        paragraph={item?.solution?.map((paragraph, index) => {
-          return (
-              <p key={index} className="flex gap-2 items-center">{paragraph?.paragraph}</p>
-            );
-          })}/>
-        
-        <ProjectRichText title="Objetivos establecidos" paragraph={item?.requirements?.map((requirement, index) => {
-        return (
-            <p key={index} className="flex gap-2 items-center"><span className="w-2 h-2 rounded-sm bg-verdeSage"></span>{requirement?.requirement}</p>
-          );
-        })}/>
-
-        {item?.solution_media?.map((media, index) => {
-        return (
-          <div key={index}>
-            {media.type === 'image' ? (
-              <ImgBox img_source={media?.media} note={media?.note}/>
-            ) : (
-                <video autoPlay muted loop className="object-cover rounded-3xl">
-                  <source src={media?.media} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-            )}
-          </div>
-          );
-        })} 
-        </div>
-
-        {/* Final */}
-        <div className="flex flex-col gap-6">
-        <ProjectRichText 
-        title="Producto final" 
-        paragraph={item?.final?.map((paragraph, index) => {
-          return (
-              <p key={index} className="flex gap-2 items-center">{paragraph?.paragraph}</p>
-            );
-          })}/>
-
-
-        {item?.final_media?.map((media, index) => {
-        return (
-          <div key={index}>
-            {media.type === 'image' ? (
-              <ImgBox img_source={media?.media} note={media?.note}/>
-            ) : (
-                <video autoPlay muted loop className="object-cover rounded-3xl">
-                  <source src={media?.media} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-            )}
-          </div>
-          );
-        })} 
-        </div>
-
-        {/* Pensamientos */}
+        {/* Conclusion */}
         <div className="flex flex-col gap-6">
           <ProjectRichText 
           title="Conclusiones finales" 
@@ -145,9 +99,12 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
               );
             })}/>
 
-          <div className="flex gap-12 text-xl text-verdeSage stroke-verdeSage">
-            <a href={item?.link} className='flex italic gap-2 font-medium items-center' target='_blank' rel="noopener noreferrer">Enlace al proyecto<RedirectIcon /></a>
-            <a href={item?.prototype} className='flex italic gap-2 font-medium items-center' target='_blank' rel="noopener noreferrer">Prototipo<RedirectIcon /></a>
+          <div className="flex flex-col lg:flex-row gap-12 text-xl text-verdeSage stroke-verdeSage">
+            {item?.links?.map((link, index) => {
+              return (
+                <a href={link.link} className='flex italic gap-2 font-medium items-center' target='_blank' rel="noopener noreferrer">{link.label}<RedirectIcon /></a>
+                );
+              })}
           </div>
 
         </div>

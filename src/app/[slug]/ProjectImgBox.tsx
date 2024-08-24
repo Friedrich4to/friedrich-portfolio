@@ -8,7 +8,7 @@ export default function ImgBox({ img_source, note }) {
 
     return(
     <div className="relative w-full aspect-video rounded-3xl">
-      <div className={`absolute z-20 bg-blanco rounded-xl bottom-4 left-4 w-fit h-fit ${note.trim() === '' ? 'p-0' : 'p-6'}`}>{note}</div>
+      <div className={`absolute z-20 bg-blanco rounded-xl font-light bottom-4 left-4 w-fit max-w-screen-sm h-fit ${note.trim() === '' ? 'p-0' : 'p-6'}`}>{note}</div>
       <Image
         src={img_source}
         fill

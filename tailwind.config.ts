@@ -19,6 +19,19 @@ const config: Config = {
       'verdeSage': 'var(--verdeSage)',
     },
 
+    keyframes: {
+      fade: {
+        '0%': { backgroundColor: 'var(--grisMid)' }, // gris claro
+        '100%': { backgroundColor: 'var(--grisMid)' },
+        '50%': { backgroundColor: 'var(--grisMid)' },
+         // gris un poco más claro
+      },
+    },
+
+    animation: {
+      'fade-bg': 'fade 3s ease-in-out infinite',
+    },
+
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

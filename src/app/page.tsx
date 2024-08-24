@@ -36,7 +36,7 @@ export default function Home() {
               especialized in <span className='italic font-black text-verdeSage'>UX-UI Design </span><br/> 
               & <span className='italic font-black text-verdeSage'>Front-End Development.</span>
             </p>
-            <p className='text-grisOs text-2xl'>+ Motion Graphics, 3D Design & Visual identity</p>
+            <p className='text-grisOs text-2xl'>+ Motion Graphics, 3D Design & Tipography</p>
           </div>
         </div>
 

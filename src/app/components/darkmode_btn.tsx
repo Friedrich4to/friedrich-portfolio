@@ -27,7 +27,7 @@ export function DarkModeBTN(){
         onClick={() => setDarkMode(!darkMode)}
         >
         <div className={`bg-negro group-hover:bg-blanco rounded transition-all duration-700 ${darkMode ? 'w-0 h-0' : 'w-5 h-5'}`}></div>
-        <span className={`transition-all group-hover:text-blanco `}>{darkMode ? 'Claro' : 'Oscuro'}</span>
+        <span className={`transition-all group-hover:text-blanco `}>{darkMode ? 'Light' : 'Dark'}</span>
         <div className={`bg-negro group-hover:bg-blanco rounded transition-all duration-700 ${darkMode ? 'w-5 h-5' : 'w-0 h-0'}`}></div>
       </button>
     )
