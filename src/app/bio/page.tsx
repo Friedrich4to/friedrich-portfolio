@@ -14,7 +14,7 @@ export default function Bio() {
         <div className="flex flex-col gap-6 max-w-screen-md">
           <p className='text-xl font-light'>Greetings! I am <br className="lg:hidden"/><span className="font-black">Frederick A. Marte Pimentel</span></p>
           <p className='text-base lg:text-xl font-light'>Born in 2001, currently living in <span className="font-black">Dominican Republic.</span></p>
-          <p className='text-base lg:text-xl font-light'>I am a design enthusiast in all its forms, whether it's objects, experiences, spaces, video games, or any area where planning and intention come into play.</p>
+          <p className='text-base lg:text-xl font-light'>I am a design enthusiast in all its forms, whether it&apos;s objects, experiences, spaces, video games, or any area where planning and intention come into play.</p>
           <p className='text-base lg:text-xl font-light'>I am characterized by being intense and extroverted, qualities that manifest in the effort I put into my work and in the way I experience the world.</p>
           </div>
 
