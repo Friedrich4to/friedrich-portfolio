@@ -13,6 +13,7 @@ export default function ProjectCard(props) {
                         src={props.img}
                         fill
                         quality={80}
+                        sizes='1920px'
                         loading = 'lazy'
                         className="rounded-t-lg object-cover"
                         alt="Project Banner"

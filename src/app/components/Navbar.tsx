@@ -135,7 +135,7 @@ export function Header() {
         </div>
 
         <nav>
-          <p className="text-grisMid font-light">UX-UI & Dev Projects</p>
+          <p className="text-grisMid font-light">Navigation</p>
           <Link href="/" ><Nav_Link href="/">Home</Nav_Link></Link>
           {
               data.map((data, index) => {

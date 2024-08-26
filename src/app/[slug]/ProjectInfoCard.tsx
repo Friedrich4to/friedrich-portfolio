@@ -19,10 +19,6 @@ export default function ProjectInfoCard(props) {
           <div className="flex flex-col gap-2">
 
             <div className="flex gap-2 items-baseline">
-                <span className="text-grisMid text-1xl font-medium italic">{ImpData.state_label}</span><p className="text-base font-light lg:text-xl">{props.state}</p>
-            </div>
-
-            <div className="flex gap-2 items-baseline">
               <span className="text-grisMid text-1xl font-medium italic">{ImpData.tech_label}</span>
               <p className="text-base font-light lg:text-xl">{props.tech}</p>
             </div>

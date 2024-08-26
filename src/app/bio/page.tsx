@@ -8,14 +8,14 @@ export default function Bio() {
       <div className="w-full max-w-screen-xl mx-5vw my-12 xl:mt-36 flex flex-col gap-12 lg:gap-16">
 
         <div>
-          <h1 className="text-5xl font-black lg:text-8xl">Biografia<br />& Pasatiempos</h1>
+          <h1 className="text-5xl font-black lg:text-8xl">Biography<br />& Hobbies</h1>
         </div>
 
         <div className="flex flex-col gap-6 max-w-screen-md">
-          <p className='text-xl font-light'>Buenas, mi nombre es <br className="lg:hidden"/><span className="font-black">Frederick A. Marte Pimentel</span></p>
-          <p className='text-base lg:text-xl font-light'>Nacido en el 2001, viviendo actualmente en <span className="font-black">República Dominicana.</span></p>
-          <p className='text-base lg:text-xl font-light'>Soy un amante del diseño en todas sus formas, ya sean objetos, experiencias, espacios, videojuegos o cualquier área en la que la planeación, intensión e ingenio tengan cabida.</p>
-          <p className='text-base lg:text-xl font-light'>Me caracteriza el ser intenso y extrovertido, cualidades que se materializan en el esfuerzo de mi trabajo y en mi forma de experimentar el mundo. </p>
+          <p className='text-xl font-light'>Greetings! I am <br className="lg:hidden"/><span className="font-black">Frederick A. Marte Pimentel</span></p>
+          <p className='text-base lg:text-xl font-light'>Born in 2001, currently living in <span className="font-black">Dominican Republic.</span></p>
+          <p className='text-base lg:text-xl font-light'>I am a design enthusiast in all its forms, whether it's objects, experiences, spaces, video games, or any area where planning and intention come into play.</p>
+          <p className='text-base lg:text-xl font-light'>I am characterized by being intense and extroverted, qualities that manifest in the effort I put into my work and in the way I experience the world.</p>
           </div>
 
           <div className="flex flex-col gap-2">

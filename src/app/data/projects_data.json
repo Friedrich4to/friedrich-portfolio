@@ -1,31 +1,31 @@
 [
   {
-      "thumbnail": "/images/witcher/hifi_1.jpg",
-      "name": "Witcher 3 HUD",
+      "thumbnail": "/images/witcher/thumbnail_witcher.jpg",
+      "name": "The Witcher 3 HUD",
       "slug": "witchergui",
-      "type": "Game interface Case study",
+      "type": "In-Game interface - Case study",
       "state": "Terminado",
-      "description": "A reimagination of the way The Witcher 3 Stamina Bar is placed for the sake of gameplay comfort and quick understanding of the current state Geralt abilities are in.",
+      "description": "A minimalist reimagination of The Witcher 3 in-game interface for the sake of a better visibility while in combat and exploring.",
       "roles": "UX research, UI Design & Motion Animation",
-      "tech": "Illustrator & After Effects",
-      "hero_media": "/images/witcher/hifi_video_1_v2.mp4",
+      "tech": "Illustrator, Photoshop & After Effects",
+      "hero_media": "/images/witcher/hero_witcher.mp4",
       "content_blocks": [
         {
-          "title": "The interface interrupt the gameplay",
+          "title": "The UI is far from sight",
           "block_paragraphs": [
-            {"paragraph": "The stamina bar, due to its positioning, is uncomfortable to look at because it is too far from the center of the screen, where the character and enemies are located."},
-            {"paragraph": "This becomes a problem because it requires the player to constantly take their eyes off the combat, resulting not in dynamic gameplay, but rather in an annoyance."}
+            {"paragraph": "The stamina bar, due to its positioning, is uncomfortable to look at because it is too far from the screen's center."},
+            {"paragraph": "This becomes a problem because it requires the player to constantly take their eyes off the combat or the road."}
           ],
           "block_multimedia": [
             {
               "type": "image",
               "media": "/images/witcher/problem_v1.jpg",
-              "note": ""
+              "note": "During combat, in order to check stats, the player has to make a long eye movement."
             },
             {
               "type": "image",
               "media": "/images/witcher/problem_v2.jpg",
-              "note": ""
+              "note": "While exploring, players say they pay more attention to the minimap, which is far from the center of the screen."
             },
             {
               "type": "image",
@@ -37,9 +37,9 @@
         {
           "title": "Industry references",
           "block_paragraphs": [
-            {"paragraph": "Looking at the industry of Action RPG and exploring games we found some solutions to those problematics that would fit perfect into The Witcher 3."},
-            {"paragraph": "In one hand we have games like Skyrim or Elden Ring, using a compass for navigating the world, a function even requested by the fans."},
-            {"paragraph": "And for managing the stamina one of the best examples is Zelda with the Stamina Wheel and others games with resources management inside the sight."}
+            {"paragraph": "Looking at the action RPG and exploration game industry, we found some solutions to these problems that would fit perfectly into The Witcher 3."},
+            {"paragraph": "On one hand, we have games like Skyrim and Elden Ring, which use a compass for navigating the world (a feature even requested by The Witcher 3 players)"},
+            {"paragraph": "For managing stamina, one of the best examples is Zelda with its Stamina Wheel, as well as other games that feature resource management within the player's field of view."}
           ],
           "block_multimedia": [
             {
@@ -55,10 +55,10 @@
           ]
         },
         {
-          "title": "Using what we know to solve the issue",
+          "title": "Using what we know to rethink the UI",
           "block_paragraphs": [
-            {"paragraph": "The solution provided consisted in turning the stamina bar into a dynamic wheel that follows Geraldt body during combat."},
-            {"paragraph": "For the navigation, the map was hidden and a compass was implemented and adapted."}
+            {"paragraph": "The proposed solution involves turning the stamina bar into a dynamic wheel that follows Geralt's lower body during combat."},
+            {"paragraph": "For navigation, the map was hidden, and a compass was implemented."}
           ],
           "block_multimedia": [
             {
@@ -79,63 +79,116 @@
           ]
         },
         {
-          "title": "First, but not last version",
+          "title": "First version. What went wrong?",
           "block_paragraphs": [
-            {"paragraph": "The first version of the Prototypes delivered a new bar, but the job was unfinished."},
-            {"paragraph": "While the main thesis was completed, the problem persisted, therefore it demanded a more complete translation of the UI."}
+            {"paragraph": "The first version of the project was created as a college assignment."},
+            {"paragraph": "After months, I revisited the project (and the game itself) and found several problems. I then determined that the solutions were incomplete and needed adjustments and an overall expansion."}
           ],
           "block_multimedia": [
             {
               "type": "image",
               "media": "/images/witcher/old_1.jpg",
-              "note": ""
+              "note": "Too thick bars."
             },
             {
               "type": "image",
               "media": "/images/witcher/old_2.jpg",
-              "note": ""
+              "note": "Unnecessarily large icons and the health bar still make the player divert their eyes from the fight."
+            },
+            {
+              "type": "image",
+              "media": "/images/witcher/old_3.jpg",
+              "note": "The compass didn’t have enough contrast and needed a North direction indicator."
             }
           ]
         },
         {
-          "title": "High Fidelity Prototypes",
+          "title": "Changes and new features",
           "block_paragraphs": [
-            {"paragraph": "The solution provided consisted in turning the stamina bar into a dynamic wheel that follows Geraldt body during combat."}
+            {"paragraph": "Due to the insights gathered from the first version, here is the list of changes I implemented in the latest version:"},
+            {"paragraph": "▪ Add the remaining original UI elements to the wheel."},
+            {"paragraph": "▪ Make parts of the UI appear dynamically depending on the situation."},
+            {"paragraph": "▪ Decrease all bar sizes and adjust the size of the sign icons."},
+            {"paragraph": "▪ Expand the elements of the compass."},
+            {"paragraph": "▪ Style the elements to more closely match the original UI."}
+          ],
+          "block_multimedia": [
+          ]
+        },
+        {
+          "title": "Final High-Fidelity prototypes",
+          "block_paragraphs": [
+            {"paragraph": "For the final version, I included the remaining UI elements in the wheel, completely removing the original elements from the corner."},
+            {"paragraph": "On top of that, some quality-of-life changes were made. For example:"},
+            {"paragraph": "▪ Making the rest of the UI low opacity while using Igni."},
+            {"paragraph": "▪ Showing only the health bar while healing out of combat."},
+            {"paragraph": "The compass was modified to be visible on both dark and light backgrounds and designed to be more compatible with the rest of the UI."}
           ],
           "block_multimedia": [
             {
+              "type": "image",
+              "media": "/images/witcher/whole_hud.png",
+              "note": ""
+            },
+            {
               "type": "video",
-              "media": "/images/witcher/hifi_video_1_v2.mp4",
+              "media": "/images/witcher/qen.mp4",
+              "note": ""
+            },
+            {
+              "type": "video",
+              "media": "/images/witcher/igni.mp4",
+              "note": ""
+            },
+            {
+              "type": "video",
+              "media": "/images/witcher/compass.mp4",
               "note": ""
             },
             {
               "type": "image",
-              "media": "/images/witcher/hifi_1.jpg",
-              "note": ""
+              "media": "/images/witcher/before_igni.jpg",
+              "note": "Using igni - Original HUD"
             },
             {
               "type": "image",
-              "media": "/images/witcher/hifi_2.jpg",
-              "note": ""
+              "media": "/images/witcher/after_igni.jpg",
+              "note": "Using igni - Wheel + Compass HUD"
+            },
+            {
+              "type": "image",
+              "media": "/images/witcher/before_compass.jpg",
+              "note": "Traveling while healing - Original HUD"
+            },
+            {
+              "type": "image",
+              "media": "/images/witcher/after_compass.jpg",
+              "note": "Traveling while healing - Wheel + Compass HUD"
+            },
+            {
+              "type": "image",
+              "media": "/images/witcher/before_qen.jpg",
+              "note": "Fighting- Original HUD"
+            },
+            {
+              "type": "image",
+              "media": "/images/witcher/after_qen.jpg",
+              "note": "Fighting - Wheel + Compass HUD"
             }
           ]
         }
       ],
       "conclusion": [
-        {"paragraph": "Me paro sobre los hombros de gigantes que admiro al plantear el rediseño de la experiencia de usuario de este videojuego."},
-        {"paragraph": "Sin embargo, siempre hay cabida a la mejora y al final del día de esto se trata. Estas propuestas buscan hacer aún mejor una experiencia de por si ya es extraordinaria."}
+        {"paragraph": "With this project, I learned the complexity of designing a UI that balances both immersion and utility. The Witcher 3 is a great example of a game so vast it requires a reliable way to navigate it, and so mechanically rich that it needs a UI providing all the necessary information for the player to understand the game."},
+        {"paragraph": "It was a joy to create a case study for one of my most beloved games, even if it was only a personal project."}
       ],
       "links": [
         {
-          "label": "Research Docs.",
+          "label": "Research Doc.",
           "link": "https://docs.google.com/document/d/1MqMePNQaSBMB-GZq_HlSRuoH2OAtTf_G2dWTmg-k4W8/edit"
         },
         {
-          "label": "Arstation Post",
-          "link": "https://www.artstation.com/artwork/g04lGx"
-        },
-        {
-          "label": "Reddit Complain Thread",
+          "label": "Reddit Thread",
           "link": "https://www.reddit.com/r/witcher/comments/3cs8fe/minimap_vs_compass/"
         }
       ]
@@ -148,26 +201,16 @@
     "type": "Showcase",
     "state": "Always growing",
     "description": "A selected collection of my 3D visualization work.",
-    "roles": "Gallery Showcase",
+    "roles": "Modelling, texturizing, animating, rendering, packaging design",
     "tech": "Blender",
     "hero_media": "/images/3d/anim.mp4",
     "content_blocks": [
       {
-        "title": "Environments",
+        "title": "Architecture visualization",
         "block_paragraphs": [
-          {"paragraph": "My collection of environments mainly made from scratch using blueprints and some 3D assets for the furniture."}
+          {"paragraph": "Environments were primarily made from scratch using blueprints, with some 3D assets used for the furniture."}
         ],
         "block_multimedia": [
-          {
-            "type": "image",
-            "media": "/images/3d/vhi_2.jpg",
-            "note": ""
-          },
-          {
-            "type": "image",
-            "media": "/images/3d/vhi_1.jpg",
-            "note": ""
-          },
           {
             "type": "image",
             "media": "/images/3d/hv3_1.jpg",
@@ -176,6 +219,16 @@
           {
             "type": "image",
             "media": "/images/3d/hv3_2.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/vhi_2.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/vhi_1.jpg",
             "note": ""
           },
           {
@@ -192,18 +245,13 @@
             "type": "image",
             "media": "/images/3d/hr2.jpg",
             "note": ""
-          },
-          {
-            "type": "image",
-            "media": "/images/3d/livecrown.jpg",
-            "note": ""
           }
         ]
       },
       {
-        "title": "Products",
+        "title": "Product visualization & Packaging",
         "block_paragraphs": [
-          {"paragraph": "My collection of product visualizations."}
+          {"paragraph": "Product visualizations, including their packaging design."}
         ],
         "block_multimedia": [
           {
@@ -230,7 +278,7 @@
       }
     ],
     "conclusion": [
-      {"paragraph": "This is a always improving gallery of my 3D work, a complementary skill for the bigger goal of mine: create better experiences."}
+      {"paragraph": "This is an ever-evolving gallery of my 3D work, a complementary skill for my larger goal: creating better experiences."}
     ],
     "links": [
 

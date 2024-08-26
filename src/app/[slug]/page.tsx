@@ -39,7 +39,7 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
 
         {/* HeroBanner */}
         <div className="rounded-3xl">
-          <video autoPlay muted loop className="object-cover w-full aspect-video rounded-3xl bg-gris animate-fade-bg">
+          <video autoPlay playsInline muted loop className="object-cover w-full aspect-video rounded-xl bg-gris animate-fade-bg">
             <source src={item?.hero_media} type="video/mp4" />
             Tu navegador no soporta la etiqueta de video.
           </video>
@@ -75,7 +75,7 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
                   {media.type === 'image' ? (
                     <ImgBox img_source={media?.media} note={media?.note}/>
                   ) : (
-                    <video autoPlay playsInline muted loop className="object-cover rounded-3xl">
+                    <video autoPlay playsInline muted loop className="object-cover rounded-xl">
                       <source src={media?.media} type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
@@ -92,7 +92,7 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
         {/* Conclusion */}
         <div className="flex flex-col gap-6">
           <ProjectRichText 
-          title="Conclusiones finales" 
+          title="End credits" 
           paragraph={item?.conclusion?.map((conclusiones, index) => {
             return (
                 <p key={index} className="flex gap-2 items-center">{conclusiones?.paragraph}</p>
