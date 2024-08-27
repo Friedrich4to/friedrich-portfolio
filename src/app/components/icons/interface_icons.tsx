@@ -71,3 +71,18 @@ export const CopyIcon = () =>(
     </g>
     </svg>
 );
+
+export const Bars = () =>(
+    <svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 789.71 315.59" className="w-8 h-8 stroke-negro transition-all">
+            <line y1="10" x2="785.29" y2="10"/>
+            <line x1="125" y1="157.06" x2="785.29" y2="157.06"/>
+            <line x1="510.29" y1="305.59" x2="789.71" y2="305.59"/>
+    </svg>
+);
+
+export const Close = () =>(
+    <svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460.55 460.55" className="w-6 h-6 stroke-blanco transition-all">
+        <line x1="7.07" y1="453.48" x2="453.48" y2="7.07"/>
+        <line x1="453.48" y1="453.48" x2="7.07" y2="7.07"/>
+    </svg>
+);

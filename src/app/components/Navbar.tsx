@@ -8,7 +8,7 @@ import Logo from "./icons/main_logo"
 import { InstagramIcon, LinkedinIcon } from "./icons/social_media_icons"
 import SocialLink from './social_link';
 import EmailButton from './copy_email_btn';
-import { ArrowDown, RedirectIcon } from './icons/interface_icons';
+import { ArrowDown, Bars, Close, RedirectIcon } from './icons/interface_icons';
 import { DarkModeBTN } from './darkmode_btn';
 
 function MobileHeader({open, setOpen}){
@@ -20,13 +20,13 @@ function MobileHeader({open, setOpen}){
       {/*MobileHeader*/}
       <div className='flex flex-col gap-8 py-12 pr-12 pl-8 h-fit w-5/6 md:w-3/6 bg-gris rounded-xl'>
         
-        <div className='flex flex-col gap-4'>
+        <div className='flex flex-col gap-4 text-base'>
           <Link className='w-20 mb-5' href="/" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}><Logo /></Link>
           <DarkModeBTN />
           <EmailButton />
           <a href="/CV - Frederick Pimentel 2024.pdf" 
           download="CV - Frederick Pimentel 2024"
-          className='group w-fit flex items-center gap-2 hover:bg-verdeSage border hover:border-verdeSage hover:text-blanco rounded-lg p-2 text-xs font-medium'
+          className='group w-fit flex items-center gap-2 hover:bg-verdeSage border hover:border-verdeSage hover:text-blanco rounded-lg p-2 font-medium'
           target='_blank'
           rel="noopener noreferrer"
           >
@@ -35,12 +35,12 @@ function MobileHeader({open, setOpen}){
         </div>
 
         <div className='flex flex-col gap-2'>
-        <p className="text-grisMid text-sm font-light">Navigation</p>
-        <div className='grid grid-cols-2 grid-rows-2 gap-2'>
-          <Link className='col-span-2 p-4 w-full text-base rounded-lg border hover:text-blanco hover:border-verdeSage hover:bg-verdeSage' href="/#projects" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>Projects</Link>
-          <Link className='p-4 w-full text-base rounded-lg border hover:text-blanco hover:border-verdeSage hover:bg-verdeSage' href="/carreer" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>Experience</Link>
-          <Link className='p-4 w-full text-base rounded-lg border hover:text-blanco hover:border-verdeSage hover:bg-verdeSage' href="/bio" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>Biography</Link>
-        </div>
+          <p className="text-grisMid text-sm font-light">Navigation</p>
+          <div className='grid grid-cols-2 grid-rows-2 gap-2 text-base'>
+            <Link className='col-span-2 p-4 w-full rounded-lg border hover:text-blanco hover:border-verdeSage hover:bg-verdeSage' href="/" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>Home</Link>
+            <Link className='p-4 w-full rounded-lg border hover:text-blanco hover:border-verdeSage hover:bg-verdeSage' href="/carreer" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>Experience</Link>
+            <Link className='p-4 w-full rounded-lg border hover:text-blanco hover:border-verdeSage hover:bg-verdeSage' href="/bio" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>Biography</Link>
+          </div>
         </div>
 
         <div className='flex flex-col gap-2'>
@@ -107,9 +107,9 @@ export function Header() {
 
       <div 
       onClick={() => {setOpen(!open)}} 
-      className={`fixed flex place-items-center xl:hidden bottom-4 right-4 p-4 border rounded-xl z-50 transition-all duration-200 ease-aggresive ${open ? "bg-verdeSage border-verdeSage" : "bg-gris"}`}
+      className={`fixed flex place-items-center xl:hidden bottom-4 right-4 border rounded-xl z-50 transition-all duration-200 ease-aggresive stroke-[24px] ${open ? "bg-verdeSage border-verdeSage p-6" : "bg-blanco p-4"}`}
       >
-        <div className={`rounded-md transition-all duration-500 ease-aggresive ${open ? "w-6 h-6 bg-blanco" : "w-8 h-8 bg-negro"}`}></div>
+        {open ? <Close /> : <Bars />}
       </div>
 
       <MobileHeader open={open} setOpen={setOpen}/>

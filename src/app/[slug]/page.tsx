@@ -39,7 +39,7 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
 
         {/* HeroBanner */}
         <div className="rounded-3xl">
-          <video autoPlay playsInline muted loop className="object-cover w-full aspect-video rounded-xl bg-gris animate-fade-bg">
+          <video autoPlay playsInline muted loop className="object-cover w-full aspect-square lg:aspect-video rounded-xl bg-gris animate-fade-bg">
             <source src={item?.hero_media} type="video/mp4" />
             Tu navegador no soporta la etiqueta de video.
           </video>
@@ -99,7 +99,7 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
               );
             })}/>
 
-          <div className="flex flex-col lg:flex-row gap-12 text-xl text-verdeSage stroke-verdeSage">
+          <div className="flex flex-col lg:flex-row lg:gap-12 gap-4 text-xl text-verdeSage stroke-verdeSage">
             {item?.links?.map((link, index) => {
               return (
                 <a key={index} href={link.link} className='flex italic gap-2 font-medium items-center' target='_blank' rel="noopener noreferrer">{link.label}<RedirectIcon /></a>

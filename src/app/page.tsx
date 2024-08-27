@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <main className="flex justify-center w-screen">  
-      <div className="w-full max-w-screen-xl mx-5vw my-12 xl:mt-36 flex flex-col gap-12 lg:gap-8">
+      <div className="w-full max-w-screen-xl mx-5vw my-12 xl:mt-36 flex flex-col gap-6 lg:gap-8">
         <div className='flex flex-col gap-2'>
           <div className="mb-4 font-light flex flex-col gap-2">
             <h1 className='text-3xl italic font-bold flex flex-col lg:flex-row lg:items-center gap-2'>
@@ -31,12 +31,12 @@ export default function Home() {
               </div>
               Frederick A. Pimentel
             </h1>
-            <p className='max-w-screen-lg lg:leading-tight text-3xl lg:text-5xl'>
+            <p className='max-w-screen-lg lg:leading-tight text-2xl lg:text-5xl'>
               Digital product designer, <br className='hidden md:inline-block'/>
-              especialized in <span className='italic font-black text-verdeSage'>UX-UI Design </span><br/> 
+              especialized in <span className='italic font-black text-verdeSage'>UX-UI Design </span><br className='hidden md:block'/> 
               & <span className='italic font-black text-verdeSage'>Front-End Development.</span>
             </p>
-            <p className='text-grisOs text-2xl'>+ Motion Graphics, 3D Design & Tipography</p>
+            <p className='text-grisOs text-xl lg:text-3xl'>+ Motion Graphics,<br className='md:hidden'/> 3D Design & Tipography</p>
           </div>
         </div>
 

@@ -201,7 +201,7 @@
     "type": "Showcase",
     "state": "Always growing",
     "description": "A selected collection of my 3D visualization work.",
-    "roles": "Modelling, texturizing, animating, rendering, packaging design",
+    "roles": "Modelling, texturizing, animating, rendering, packaging design.",
     "tech": "Blender",
     "hero_media": "/images/3d/anim.mp4",
     "content_blocks": [

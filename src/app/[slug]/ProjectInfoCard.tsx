@@ -18,15 +18,13 @@ export default function ProjectInfoCard(props) {
 
           <div className="flex flex-col gap-2">
 
-            <div className="flex gap-2 items-baseline">
-              <span className="text-grisMid text-1xl font-medium italic">{ImpData.tech_label}</span>
-              <p className="text-base font-light lg:text-xl">{props.tech}</p>
-            </div>
+            <p className="font-light">
+              <span className="text-grisMid text-1xl font-medium italic">{ImpData.tech_label}</span> {props.tech}
+            </p>
 
-            <div className="flex gap-2 items-baseline">
-              <span className="text-grisMid text-1xl font-medium italic">{ImpData.roles_label}</span>
-              <p className="text-base font-light lg:text-xl">{props.roles}</p>
-            </div>
+            <p className="font-light">
+              <span className="text-grisMid text-1xl font-medium italic">{ImpData.roles_label}</span> {props.roles}
+            </p>
             
           </div>
         </div>
