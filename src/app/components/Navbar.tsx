@@ -47,7 +47,7 @@ function MobileHeader({open, setOpen}){
           <p className="text-grisMid text-sm font-light">Social media</p>
           <div className='flex gap-4'>
               <a href="https://www.instagram.com/friedrich4to/" className='flex italic gap-1 font-medium items-center' target='_blank' rel="noopener noreferrer">Instagram<RedirectIcon /></a>
-              <a href="https://www.instagram.com/friedrich4to/" className='flex italic gap-1 font-medium items-center' target='_blank' rel="noopener noreferrer">LinkedIn<RedirectIcon /></a>
+              <a href="https://www.linkedin.com/in/fredpimentel/" className='flex italic gap-1 font-medium items-center' target='_blank' rel="noopener noreferrer">LinkedIn<RedirectIcon /></a>
           </div>
         </div>
       </div>
