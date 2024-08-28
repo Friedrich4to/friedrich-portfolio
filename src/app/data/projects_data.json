@@ -179,7 +179,8 @@
         }
       ],
       "conclusion": [
-        {"paragraph": "With this project, I learned the complexity of designing a UI that balances both immersion and utility. The Witcher 3 is a great example of a game so vast it requires a reliable way to navigate it, and so mechanically rich that it needs a UI providing all the necessary information for the player to understand the game."},
+        {"paragraph": "With this project, I learned the complexity of designing a UI that balances both immersion and utility."},
+        {"paragraph": "The Witcher 3 is a great example of a game so vast it requires a reliable way to navigate it, and so mechanically rich that it needs a UI providing all the necessary information for the player to understand the game."},
         {"paragraph": "It was a joy to create a case study for one of my most beloved games, even if it was only a personal project."}
       ],
       "links": [

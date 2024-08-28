@@ -64,7 +64,7 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
               {/*Paragraphs array*/}
               {block_paragraphs.map((paragraph, index) => {
                 return (
-                    <p key={index} className="flex flex-col gap-4 font-light dark:text-grisOs text-base lg:text-xl max-w-screen-md">{paragraph?.paragraph}</p>
+                    <p key={index} className="flex flex-col gap-4 font-light text-grisOs text-base lg:text-xl max-w-screen-md">{paragraph?.paragraph}</p>
                   );
               })}
             
@@ -95,7 +95,7 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
           title="End credits" 
           paragraph={item?.conclusion?.map((conclusiones, index) => {
             return (
-                <p key={index} className="flex gap-2 items-center">{conclusiones?.paragraph}</p>
+                <p key={index} className="flex gap-2 text-grisOs items-center">{conclusiones?.paragraph}</p>
               );
             })}/>
 
