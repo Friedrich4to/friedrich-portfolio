@@ -224,6 +224,11 @@
           },
           {
             "type": "image",
+            "media": "/images/3d/hv3_3.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
             "media": "/images/3d/vhi_2.jpg",
             "note": ""
           },
@@ -240,6 +245,11 @@
           {
             "type": "video",
             "media": "/images/3d/sr_videos.mp4",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/hr2_3.jpg",
             "note": ""
           },
           {
@@ -273,6 +283,16 @@
           {
             "type": "image",
             "media": "/images/3d/divine_2.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/wine_1.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/3d/wine_2.jpg",
             "note": ""
           }
         ]
