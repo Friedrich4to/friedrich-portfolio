@@ -124,7 +124,7 @@ export function Header() {
 
           <a href="/CV - Frederick Pimentel 2024.pdf" 
           download="CV - Frederick Pimentel 2024"
-          className='group w-fit flex items-center gap-2 hover:bg-verdeSage border hover:border-verdeSage hover:text-blanco rounded-lg p-2 font-medium'
+          className='group w-fit flex items-center gap-2 border border-grisMid text-negro hover:bg-verdeSage hover:border-verdeSage hover:text-blanco rounded-lg p-3 font-medium transition-all ease-aggresive duration-700'
           target='_blank'
           rel="noopener noreferrer"
           >
@@ -149,17 +149,11 @@ export function Header() {
         </nav>
 
         <div>
-          <p className="text-grisMid font-light">About me</p>
+          <p className="text-grisMid font-light">About</p>
           <Link href="/carreer" ><Nav_Link href="/carreer">Experience</Nav_Link></Link>
           <Link href="/bio" ><Nav_Link href="/bio">Biography</Nav_Link></Link>
-        </div>
-
-        <div>
-          <p className="text-grisMid font-light">Social Media</p>
-          <div className='flex flex-col gap-3'>
-              <a href="https://www.instagram.com/friedrich4to/" className='group flex italic gap-2 font-medium hover:text-verdeSage items-center' target='_blank' rel="noopener noreferrer">Instagram<RedirectIcon /></a>
-              <a href="https://www.linkedin.com/in/fredpimentel/" className='group flex italic gap-2 font-medium hover:text-verdeSage items-center' target='_blank' rel="noopener noreferrer">LinkedIn<RedirectIcon /></a>
-          </div>
+          <a href="https://www.instagram.com/friedrich4to/" className='group flex italic gap-2 font-medium hover:text-verdeSage items-center transition-all ease-aggresive duration-700' target='_blank' rel="noopener noreferrer">Instagram<RedirectIcon /></a>
+          <a href="https://www.linkedin.com/in/fredpimentel/" className='group flex italic gap-2 font-medium hover:text-verdeSage items-center transition-all ease-aggresive duration-700' target='_blank' rel="noopener noreferrer">LinkedIn<RedirectIcon /></a>
         </div>
       </div>
 

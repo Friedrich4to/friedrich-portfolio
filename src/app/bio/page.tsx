@@ -16,9 +16,15 @@ export default function Bio() {
           <p className='text-base lg:text-xl font-light'>Born in 2001, currently living in <span className="font-black">Dominican Republic.</span></p>
           <p className='text-base lg:text-xl font-light'>I am a design enthusiast in all its forms, whether it&apos;s objects, experiences, spaces, video games, or any area where planning and intention come into play.</p>
           <p className='text-base lg:text-xl font-light'>I am characterized by being intense and extroverted, qualities that manifest in the effort I put into my work and in the way I experience the world.</p>
-          </div>
+        </div>
 
-          <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
+          <p className='text-base lg:text-2xl font-black'>This is how my days sounds like.</p>
+          <iframe className="rounded-xl" src="https://open.spotify.com/embed/playlist/4rF7gTPiC2oIMWCYAD3c3z?utm_source=generator&theme=0" width="40%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+
+
+        <div className="flex flex-col gap-2">
             <Image
               src='/images/bio/about.jpg'
               width={1280}
@@ -32,9 +38,9 @@ export default function Bio() {
               <span className="italic font-bold">Madrugada neblinosa, 2024</span>
               <span className="text-grisMid italic font-light">Altos de Chavón, La Romana, 06:00 a.m. </span>
             </div>
-          </div>
+        </div>
 
-          <Footer />
+        <Footer />
 
       </div>
     </main>

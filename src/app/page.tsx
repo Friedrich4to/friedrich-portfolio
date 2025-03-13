@@ -15,28 +15,15 @@ export default function Home() {
     <main className="flex justify-center w-screen">  
       <div className="w-full max-w-screen-xl mx-5vw my-12 xl:mt-36 flex flex-col gap-6 lg:gap-8">
         <div className='flex flex-col gap-2'>
-          <div className="mb-4 font-light flex flex-col gap-2">
-            <h1 className='text-3xl italic font-bold flex flex-col lg:flex-row lg:items-center gap-2'>
-              <div className='relative h-16 w-16 rounded-full hover:scale-125 transition-all duration-700 ease-aggresive'>
-                <Link href='/carreer'>
-                  <Image
-                    src='/images/bio/portrait.png'
-                    fill
-                    quality={80}
-                    loading = 'lazy'
-                    className="rounded-xl object-cover"
-                    alt="portrait"
-                  />
-                </Link>
-              </div>
-              Frederick A. Pimentel
-            </h1>
-            <p className='max-w-screen-lg lg:leading-tight text-2xl lg:text-5xl'>
-              Digital product designer, <br className='hidden md:inline-block'/>
-              especialized in <span className='italic font-black text-verdeSage'>UX-UI Design </span><br className='hidden md:block'/> 
-              & <span className='italic font-black text-verdeSage'>Front-End Development.</span>
-            </p>
-            <p className='text-grisOs text-xl lg:text-3xl'>+ Motion Graphics,<br className='md:hidden'/> 3D Design & Tipography</p>
+          <div className="mb-4 font-light flex flex-col gap-6">
+              <h1 className='text-3xl font-black gap-2'>
+                Frederick A. Pimentel,
+              </h1>
+              <p className='max-w-screen-lg lg:leading-tight 2xl:leading-tight text-xl lg:text-3xl 2xl:text-4xl'>
+                an <span className='font-bold'>interaction designer & developer, </span> <br className='hidden md:inline-block'/>
+                especialized on <span className='text-verdeSage'>interfaces|websites,</span> <br className='hidden md:block'/>
+                <span className='text-verdeSage'>3D visualization</span> & <span className='text-verdeSage'>motion graphics.</span>
+              </p>
           </div>
         </div>
 
@@ -45,7 +32,7 @@ export default function Home() {
             projects.map((data,index) => {
               return(
                 <Link key={index} href={data.slug}>
-                  <ProjectCard img={data.thumbnail} name={data.name} type={data.type}/>
+                  <ProjectCard img={data.thumbnail} vid={data.hero_media} name={data.name} type={data.type}/>
                 </Link>
               )
             })

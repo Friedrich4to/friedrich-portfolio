@@ -23,7 +23,7 @@ export function DarkModeBTN(){
 
     return(
         <button 
-        className={`group transition-all py-2 px-2 w-fit text-sm rounded-lg border border-negro text-negro flex gap-2 items-center hover:bg-negro`}
+        className={`group transition-all py-2 px-2 w-fit text-sm rounded-lg bg-blanco text-negro flex gap-2 items-center hover:bg-negro`}
         onClick={() => setDarkMode(!darkMode)}
         >
         <div className={`bg-negro group-hover:bg-blanco rounded transition-all duration-700 ${darkMode ? 'w-0 h-0' : 'w-5 h-5'}`}></div>

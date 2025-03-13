@@ -20,8 +20,6 @@ interface nextItem {
   };
 }
 
-
-
 export default function DynamicPage({ params }: { params: { slug: string } }) {
 
   const item = projects.find((item) => item.slug === params.slug);
@@ -39,14 +37,15 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
 
         {/* HeroBanner */}
         <div className="rounded-3xl">
-          <video autoPlay playsInline muted loop className="object-cover w-full aspect-square lg:aspect-video rounded-xl bg-gris animate-fade-bg">
+          <video autoPlay playsInline muted loop className="object-cover w-full aspect-video rounded-xl bg-gris animate-fade-bg">
             <source src={item?.hero_media} type="video/mp4" />
             Tu navegador no soporta la etiqueta de video.
           </video>
         </div>
 
-        {/* Info */}
-        <ProjectInfoCard name={item?.name} type={item?.type} description={item?.description} roles={item?.roles} tech={item?.tech} state={item?.state}/>    
+        {/* Info */} 
+
+        <ProjectInfoCard name={item?.name} type={item?.type} description={item?.description} roles={item?.roles} tech={item?.tech} state={item?.state}/>         
 
         <div className="flex items-center gap-8">
           <div className="w-48 h-[2px] bg-negro"></div>
@@ -58,15 +57,16 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
           {item?.content_blocks.map(({title, block_paragraphs, block_multimedia}) =>{
             return (
             <div key={title} className="flex flex-col gap-4">
-              {/*Title*/}
-              <h1 className="text-3xl font-black">{title}</h1>
-
-              {/*Paragraphs array*/}
-              {block_paragraphs.map((paragraph, index) => {
-                return (
-                    <p key={index} className="flex flex-col gap-4 font-light text-grisOs text-base lg:text-xl max-w-screen-md">{paragraph?.paragraph}</p>
-                  );
-              })}
+              <div>
+                {/*Title*/}
+                <h1 className="text-4xl font-black">{title}</h1>
+                {/*Paragraphs array*/}
+                {block_paragraphs.map((paragraph, index) => {
+                  return (
+                      <p key={index} className="flex flex-col gap-4 font-light text-grisOs text-base lg:text-xl max-w-screen-md">{paragraph?.paragraph}</p>
+                    );
+                })}
+              </div>
             
               {/*Multimedia array*/}
               {block_multimedia.map((media, index) => {
@@ -112,7 +112,7 @@ export default function DynamicPage({ params }: { params: { slug: string } }) {
         {/*Footer*/}
         <div className="flex gap-4 flex-col">
 
-          <Link href={nextItem?.slug} className="group w-fit p-4 border rounded-lg hover:border-verdeSage hover:bg-verdeSage hover:text-blanco transition-all">
+          <Link href={nextItem?.slug} className="group w-fit p-4 bg-negro border rounded-lg hover:border-verdeSage hover:bg-verdeSage text-blanco transition-all">
             <MoreProjects_link project_name={nextItem?.name}/>
           </Link>
         </div>

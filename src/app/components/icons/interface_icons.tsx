@@ -30,7 +30,7 @@ export const ArrowUp = () =>(
 );
 
 export const ArrowRight = () =>(
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.57 85.3" className="fill-none h-6 2xl:h-8 stroke-[4px] transition-all stroke-negro group-hover:stroke-blanco">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.57 85.3" className="fill-none h-6 2xl:h-8 stroke-[4px] transition-all stroke-blanco group-hover:stroke-blanco">
         <g>
             <g>
                 <line y1="42.65" x2="49.64" y2="42.65"/>
@@ -46,7 +46,7 @@ export const ArrowRight = () =>(
 );
 
 export const ArrowDown = () =>(
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.3 83.57" className="fill-none h-3 2xl:h-4 stroke-[4px] transition-all stroke-negro group-hover:stroke-blanco">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.3 83.57" className="fill-none h-3 2xl:h-4 stroke-[4px] transition-all group-hover:stroke-blanco stroke-negro">
         <g>
             <g>
                 <line x1="42.65" x2="42.65" y2="49.64"/>
@@ -62,7 +62,7 @@ export const ArrowDown = () =>(
 );
 
 export const CopyIcon = () =>(
-    <svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.07 74.42" className="fill-none w-5 h-5 stroke-[4px] transition-all stroke-negro group-hover:stroke-blanco">
+    <svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.07 74.42" className="fill-none w-5 h-5 stroke-[4px] transition-all group-hover:stroke-blanco stroke-negro">
     <g id="Capa_1-2" data-name="Capa 1">
         <g>
             <path d="M36.91,64.05v6.57c0,1.54-1.25,2.79-2.79,2.79H3.79c-1.54,0-2.79-1.25-2.79-2.79V23.72c0-1.54,1.25-2.79,2.79-2.79h10.36"/>

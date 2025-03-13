@@ -12,7 +12,7 @@ export default function ImgBox({ img_source, note }) {
       <Image
         src={img_source}
         fill
-        quality={80}
+        quality={100}
         sizes='1920px'
         loading = 'lazy'
         className="rounded-xl object-cover"

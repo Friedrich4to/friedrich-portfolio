@@ -1,5 +1,186 @@
 [
   {
+    "thumbnail": "/images/cocont/cocontbanner.jpg",
+    "name": "Cocon´t Website",
+    "slug": "cocont",
+    "type": "3D Skincare products website",
+    "state": "Terminado",
+    "description": "A minimalist reimagination of The Witcher 3 in-game interface for the sake of a better visibility while in combat and exploring.",
+    "roles": "Product design - Brand design - UX & UI design - 3D modelling - Motion animation",
+    "tech": "Figma - Blender - After effects - Illustrator",
+    "hero_media": "/images/cocont/cocont_mainreel.mp4",
+    "content_blocks": [
+      {
+        "title": "Landing page sections",
+        "block_paragraphs": [
+          {"paragraph": "The stamina bar, due to its positioning, is uncomfortable to look at because it is too far from the screen's center."}
+        ],
+        "block_multimedia": [
+          {
+            "type": "video",
+            "media": "/images/cocont/landing_reel.mp4",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/cocont/section_1.jpg",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "title": "The 3D store section (shop table)",
+        "block_paragraphs": [
+          {"paragraph": "The stamina bar, due to its positioning, is uncomfortable to look at because it is too far from the screen's center."}
+        ],
+        "block_multimedia": [
+          {
+            "type": "video",
+            "media": "/images/cocont/shop_reel.mp4",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "title": "AR and Download preview function",
+        "block_paragraphs": [
+          {"paragraph": "The stamina bar, due to its positioning, is uncomfortable to look at because it is too far from the screen's center."}
+        ],
+        "block_multimedia": [
+          {
+            "type": "image",
+            "media": "/images/cocont/ar_image_2.jpg",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "title": "Art direction, 3D assets and Product design",
+        "block_paragraphs": [
+          {"paragraph": "The stamina bar, due to its positioning, is uncomfortable to look at because it is too far from the screen's center."}
+        ],
+        "block_multimedia": [
+          {
+            "type": "image",
+            "media": "/images/cocont/moodboard.jpg",
+            "note": "Moodboard of references"
+          },
+          {
+            "type": "image",
+            "media": "/images/cocont/empaques.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/cocont/product_all.png",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/cocont/product_top.png",
+            "note": ""
+          },
+          {
+            "type": "video",
+            "media": "/images/cocont/cocontmain.mp4",
+            "note": "Texture"
+          }
+        ]
+      }
+    ],
+    "conclusion": [
+      {"paragraph": "With this project, I learned the complexity of designing a UI that balances both immersion and utility."}
+    ],
+    "links": [
+      {
+        "label": "Website demo",
+        "link": "https://www.reddit.com/r/witcher/comments/3cs8fe/minimap_vs_compass/"
+      },
+      {
+        "label": "Figma Prototype",
+        "link": "https://www.figma.com/proto/uQuR3s2DxfbxpZyvBZ0n9H/Cocont-Website?page-id=0%3A1&node-id=1-35&node-type=canvas&viewport=-2545%2C286%2C0.79&t=csvs1FvQjdlBZxPS-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A35"
+      }
+    ]
+    
+  },
+  {
+    "thumbnail": "/images/harmony/rentsbanner.jpg",
+    "name": "Portier WebApp",
+    "slug": "harmony",
+    "type": "Digitalizing form process",
+    "state": "Terminado",
+    "description": "A minimalist reimagination of The Witcher 3 in-game interface for the sake of a better visibility while in combat and exploring.",
+    "roles": "UX Research - UI Design - Motion Animation",
+    "tech": "NextJS - Postgresql - DirectusCMS - Figma",
+    "hero_media": "/images/harmony/mainreel.mp4",
+    "content_blocks": [
+      {
+        "title": "From the paper to the screens",
+        "block_paragraphs": [
+          {"paragraph": "The stamina bar, due to its positioning, is uncomfortable to look at because it is too far from the screen's center."},
+          {"paragraph": "This becomes a problem because it requires the player to constantly take their eyes off the combat or the road."}
+        ],
+        "block_multimedia": [
+          {
+            "type": "image",
+            "media": "/images/harmony/bringing.png",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "title": "Houses list and details",
+        "block_paragraphs": [
+          {"paragraph": "Looking at the action RPG and exploration game industry, we found some solutions to these problems that could be adapted into The Witcher 3."}
+        ],
+        "block_multimedia": [
+          {
+            "type": "image",
+            "media": "/images/harmony/allinone.png",
+            "note": ""
+          },
+          {
+            "type": "video",
+            "media": "/images/harmony/detailreel.mp4",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "title": "Digitalizing the form submiting process",
+        "block_paragraphs": [
+          {"paragraph": "Looking at the action RPG and exploration game industry, we found some solutions to these problems that could be adapted into The Witcher 3."}
+        ],
+        "block_multimedia": [
+          {
+            "type": "video",
+            "media": "/images/harmony/formreel.mp4",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/harmony/togle.png",
+            "note": ""
+          }
+        ]
+      }
+    ],
+    "conclusion": [
+      {"paragraph": "With this project, I learned the complexity of designing a UI that balances both immersion and utility."}
+    ],
+    "links": [
+      {
+        "label": "Research Doc.",
+        "link": "https://docs.google.com/document/d/1MqMePNQaSBMB-GZq_HlSRuoH2OAtTf_G2dWTmg-k4W8/edit"
+      },
+      {
+        "label": "Reddit Thread",
+        "link": "https://www.reddit.com/r/witcher/comments/3cs8fe/minimap_vs_compass/"
+      }
+    ]
+    
+  },
+  {
       "thumbnail": "/images/witcher/thumbnail_witcher.jpg",
       "name": "The Witcher 3 HUD",
       "slug": "witchergui",
@@ -11,7 +192,7 @@
       "hero_media": "/images/witcher/hero_witcher.mp4",
       "content_blocks": [
         {
-          "title": "The UI is far from sight",
+          "title": "The UI position visibility problem",
           "block_paragraphs": [
             {"paragraph": "The stamina bar, due to its positioning, is uncomfortable to look at because it is too far from the screen's center."},
             {"paragraph": "This becomes a problem because it requires the player to constantly take their eyes off the combat or the road."}
@@ -196,14 +377,14 @@
       
   },
   {
-    "thumbnail": "/images/3d/hv3_1.jpg",
-    "name": "3D Work Collection",
+    "thumbnail": "/images/3d/3dbanner.jpg",
+    "name": "3D Visualization",
     "slug": "3d",
-    "type": "Showcase",
+    "type": "Work Collection",
     "state": "Always growing",
     "description": "A selected collection of my 3D visualization work.",
     "roles": "Modelling, texturizing, animating, rendering, packaging design.",
-    "tech": "Blender",
+    "tech": "Blender, Photoshop",
     "hero_media": "/images/3d/sr_videos.mp4",
     "content_blocks": [
       {
@@ -256,6 +437,21 @@
             "type": "image",
             "media": "/images/3d/hr2.jpg",
             "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/park/day.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/park/night.jpg",
+            "note": ""
+          },
+          {
+            "type": "image",
+            "media": "/images/park/wide.jpg",
+            "note": ""
           }
         ]
       },
@@ -273,6 +469,11 @@
           {
             "type": "image",
             "media": "/images/3d/cocont_2.jpg",
+            "note": ""
+          },
+          {
+            "type": "video",
+            "media": "/images/3d/cocont_reel.mp4",
             "note": ""
           },
           {
